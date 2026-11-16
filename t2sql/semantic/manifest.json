@@ -1,0 +1,50 @@
+{
+  "card_games": {
+    "tables": 7,
+    "description_files": [
+      "cards.csv",
+      "foreign_data.csv",
+      "legalities.csv",
+      "rulings.csv",
+      "set_translations.csv",
+      "sets.csv"
+    ],
+    "row_counts": {
+      "cards": 56822,
+      "foreign_data": 229186,
+      "legalities": 427907,
+      "rulings": 87769,
+      "set_translations": 1210,
+      "sets": 551,
+      "sqlite_sequence": 6
+    }
+  },
+  "toxicology": {
+    "tables": 4,
+    "description_files": [
+      "atom.csv",
+      "bond.csv",
+      "connected.csv",
+      "molecule.csv"
+    ],
+    "row_counts": {
+      "atom": 12333,
+      "bond": 12379,
+      "connected": 24758,
+      "molecule": 343
+    }
+  },
+  "thrombosis_prediction": {
+    "tables": 3,
+    "description_files": [
+      "Examination.csv",
+      "Laboratory.csv",
+      "Patient.csv"
+    ],
+    "row_counts": {
+      "Examination": 806,
+      "Laboratory": 13908,
+      "Patient": 1238
+    }
+  }
+}
