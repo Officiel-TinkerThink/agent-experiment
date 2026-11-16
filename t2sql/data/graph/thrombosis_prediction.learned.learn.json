@@ -1,0 +1,3311 @@
+{
+ "db": "thrombosis_prediction",
+ "fold": "learn",
+ "concepts": [
+  {
+   "id": "k:0",
+   "text": "When was the examination taken refers to `Examination Date`",
+   "refs": [
+    "c:Examination.Examination Date"
+   ],
+   "support": 1,
+   "sources": [
+    1154
+   ]
+  },
+  {
+   "id": "k:1",
+   "text": "within the UN normal index refers to UN < 30",
+   "refs": [
+    "c:Laboratory.UN"
+   ],
+   "support": 1,
+   "sources": [
+    1221
+   ]
+  },
+  {
+   "id": "k:2",
+   "text": "Diagnosis = 'RA'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Laboratory.RA",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1221
+   ]
+  },
+  {
+   "id": "k:3",
+   "text": "anti Cardiolipin antibody concentration refers to `aCL IgG`, `aCL IgM`, `aCL IgA`",
+   "refs": [
+    "c:Examination.aCL IgA",
+    "c:Examination.aCL IgG",
+    "c:Examination.aCL IgM"
+   ],
+   "support": 1,
+   "sources": [
+    1292
+   ]
+  },
+  {
+   "id": "k:4",
+   "text": "female patient refers to Sex = F'",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1292
+   ]
+  },
+  {
+   "id": "k:5",
+   "text": "highest uric acid level in the normal range refers to MAX(UA > 6.50)",
+   "refs": [
+    "c:Laboratory.UA"
+   ],
+   "support": 1,
+   "sources": [
+    1292
+   ]
+  },
+  {
+   "id": "k:6",
+   "text": "albumin level lower than 3.5 refers to ALB < 3.5",
+   "refs": [
+    "c:Laboratory.ALB"
+   ],
+   "support": 1,
+   "sources": [
+    1159
+   ]
+  },
+  {
+   "id": "k:7",
+   "text": "male refers to SEX = 'M'",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 9,
+   "sources": [
+    1172,
+    1280,
+    1283,
+    1169,
+    1202,
+    1291,
+    1275,
+    1222,
+    1310
+   ]
+  },
+  {
+   "id": "k:8",
+   "text": "elevated means above the normal range",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.T-BIL",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1172
+   ]
+  },
+  {
+   "id": "k:9",
+   "text": "total bilirubin above the normal range refers to `T-BIL` >= '2.0'",
+   "refs": [
+    "c:Laboratory.T-BIL"
+   ],
+   "support": 1,
+   "sources": [
+    1172
+   ]
+  },
+  {
+   "id": "k:10",
+   "text": "normal range of creatinine phosphokinase refers to CPK < 250",
+   "refs": [
+    "c:Laboratory.CPK"
+   ],
+   "support": 2,
+   "sources": [
+    1302,
+    1230
+   ]
+  },
+  {
+   "id": "k:11",
+   "text": "positive measure of degree of coagulation refers to KCT = '+' or RVVT = '+' or LAC = '+'",
+   "refs": [
+    "c:Examination.KCT",
+    "c:Examination.LAC",
+    "c:Examination.RVVT"
+   ],
+   "support": 1,
+   "sources": [
+    1302
+   ]
+  },
+  {
+   "id": "k:12",
+   "text": "PLT > 100 and PLT < 400 means platelet level is within the normal range",
+   "refs": [
+    "c:Laboratory.PLT"
+   ],
+   "support": 1,
+   "sources": [
+    1309
+   ]
+  },
+  {
+   "id": "k:13",
+   "text": "PLT < 100 and PLT > 400 means platelet level is not within the normal range",
+   "refs": [
+    "c:Laboratory.PLT"
+   ],
+   "support": 1,
+   "sources": [
+    1309
+   ]
+  },
+  {
+   "id": "k:14",
+   "text": "diagnosed with MCTD refers to Diagnosis = 'MCTD'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1309
+   ]
+  },
+  {
+   "id": "k:15",
+   "text": "the most serious thrombosis refers to Thrombosis = '1' (the most severe one)",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1164
+   ]
+  },
+  {
+   "id": "k:16",
+   "text": "women refers to sex = 'F'",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1164
+   ]
+  },
+  {
+   "id": "k:17",
+   "text": "uric acid (UA) beyond the normal range refers to UA > 8.0 and SEX = 'M' or UA > 6.5 and SEX = 'F'",
+   "refs": [
+    "c:Laboratory.UA",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1218
+   ]
+  },
+  {
+   "id": "k:18",
+   "text": "female refers to Sex = 'F'",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 8,
+   "sources": [
+    1218,
+    1215,
+    1169,
+    1162,
+    1270,
+    1198,
+    1150,
+    1160
+   ]
+  },
+  {
+   "id": "k:19",
+   "text": "glutamic oxaloacetic transaminase in the normal range refers to GOT < 60",
+   "refs": [
+    "c:Laboratory.GOT"
+   ],
+   "support": 1,
+   "sources": [
+    1280
+   ]
+  },
+  {
+   "id": "k:20",
+   "text": "normal glutamic pylvic transaminase level refers to GOT < 60",
+   "refs": [
+    "c:Laboratory.GOT"
+   ],
+   "support": 1,
+   "sources": [
+    1283
+   ]
+  },
+  {
+   "id": "k:21",
+   "text": "total protein (TP) beyond the normal index refers to TP > 8.5",
+   "refs": [
+    "c:Laboratory.TP"
+   ],
+   "support": 1,
+   "sources": [
+    1215
+   ]
+  },
+  {
+   "id": "k:22",
+   "text": "deviation of TP index from normal refers to SUBTRACT(TP, 8.5)",
+   "refs": [
+    "c:Laboratory.TP"
+   ],
+   "support": 1,
+   "sources": [
+    1215
+   ]
+  },
+  {
+   "id": "k:23",
+   "text": "hadn't undergone a medical examination until at least a year refers to SUBTRACT(year(`Examination Date`), year(`First Date`)) > = 1",
+   "refs": [
+    "c:Examination.Examination Date"
+   ],
+   "support": 1,
+   "sources": [
+    1170
+   ]
+  },
+  {
+   "id": "k:24",
+   "text": "average index of the lactate dehydrogenase (LDH) refers to AVG(LDH)",
+   "refs": [
+    "c:Laboratory.LDH"
+   ],
+   "support": 1,
+   "sources": [
+    1210
+   ]
+  },
+  {
+   "id": "k:25",
+   "text": "(LDH) within the normal range refers to LDH < 500",
+   "refs": [
+    "c:Laboratory.LDH"
+   ],
+   "support": 1,
+   "sources": [
+    1210
+   ]
+  },
+  {
+   "id": "k:26",
+   "text": "urea nitrogen (UN) just within the borderline of passing refers to UN = 29",
+   "refs": [
+    "c:Laboratory.UN"
+   ],
+   "support": 1,
+   "sources": [
+    1220
+   ]
+  },
+  {
+   "id": "k:27",
+   "text": "abnormal uric acid refers to UA < = '8.0' where SEX = 'M', UA < = '6.5' where SEX = 'F'",
+   "refs": [
+    "c:Laboratory.UA",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1169
+   ]
+  },
+  {
+   "id": "k:28",
+   "text": "calculation = DIVIDE(SUM(UA <= '8.0' and SEX = 'M'), SUM(UA <= '6.5 and SEX = 'F'))",
+   "refs": [
+    "c:Laboratory.UA",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1169
+   ]
+  },
+  {
+   "id": "k:29",
+   "text": "thrombocytopenia' refers to symptoms",
+   "refs": [
+    "c:Examination.Symptoms"
+   ],
+   "support": 1,
+   "sources": [
+    1200
+   ]
+  },
+  {
+   "id": "k:30",
+   "text": "'SLE' refers to diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1200
+   ]
+  },
+  {
+   "id": "k:31",
+   "text": "calculation =  DIVIDE(SUM(DIAGNOSIS LIKE '%ITP%'), SUM(DIAGNOSIS LIKE '%SLE%')) MULTIPLY 100",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1200
+   ]
+  },
+  {
+   "id": "k:32",
+   "text": "underwent testing between 1995 and 1997 refers to `Examination Date` between '1995' and '1997'",
+   "refs": [
+    "c:Examination.Examination Date"
+   ],
+   "support": 1,
+   "sources": [
+    1202
+   ]
+  },
+  {
+   "id": "k:33",
+   "text": "Behcet refers to diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1202
+   ]
+  },
+  {
+   "id": "k:34",
+   "text": "did not stay in the hospital refers to Admission = '-'",
+   "refs": [
+    "c:Patient.Admission"
+   ],
+   "support": 1,
+   "sources": [
+    1202
+   ]
+  },
+  {
+   "id": "k:35",
+   "text": "normal level of both albumin and total protein refers to ALB > 3.5 and ALB < 5.5 AND TP between 6.0 and 8.5",
+   "refs": [
+    "c:Laboratory.ALB",
+    "c:Laboratory.TP"
+   ],
+   "support": 1,
+   "sources": [
+    1291
+   ]
+  },
+  {
+   "id": "k:36",
+   "text": "blood glucose (GLU) index that were within normal range refers to GLU < 180",
+   "refs": [
+    "c:Laboratory.GLU"
+   ],
+   "support": 1,
+   "sources": [
+    1233
+   ]
+  },
+  {
+   "id": "k:37",
+   "text": "data that was first recorded in 1991 refers to year(Description) = 1991",
+   "refs": [
+    "c:Patient.Description"
+   ],
+   "support": 1,
+   "sources": [
+    1233
+   ]
+  },
+  {
+   "id": "k:38",
+   "text": "total protein (TP) below the lower range of the normal index refers to TP < 6.0",
+   "refs": [
+    "c:Laboratory.TP"
+   ],
+   "support": 1,
+   "sources": [
+    1214
+   ]
+  },
+  {
+   "id": "k:39",
+   "text": "highest lactate dehydrogenase in the normal range refers to MAX(LDH < 500)",
+   "refs": [
+    "c:Laboratory.LDH"
+   ],
+   "support": 1,
+   "sources": [
+    1284
+   ]
+  },
+  {
+   "id": "k:40",
+   "text": "when the data first recorded refers to MIN(First Date)",
+   "refs": [
+    "c:Laboratory.Date"
+   ],
+   "support": 1,
+   "sources": [
+    1284
+   ]
+  },
+  {
+   "id": "k:41",
+   "text": "age gap refers to SUBTRACT(MAX(year(Birthday)) - MIN(year(Birthday)))",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1165
+   ]
+  },
+  {
+   "id": "k:42",
+   "text": "normal triglyceride refers to tg > = 200",
+   "refs": [
+    "c:Laboratory.TG"
+   ],
+   "support": 1,
+   "sources": [
+    1165
+   ]
+  },
+  {
+   "id": "k:43",
+   "text": "diagnosed with SLE refers to Diagnosis = 'SLE'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1238
+   ]
+  },
+  {
+   "id": "k:44",
+   "text": "The larger the birthday value, the younger the person is, and vice versa",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 4,
+   "sources": [
+    1238,
+    1166,
+    1281,
+    1209
+   ]
+  },
+  {
+   "id": "k:45",
+   "text": "normal hemoglobin level refers to 10 < HGB < 17",
+   "refs": [
+    "c:Laboratory.HGB"
+   ],
+   "support": 1,
+   "sources": [
+    1238
+   ]
+  },
+  {
+   "id": "k:46",
+   "text": "total cholesterol is higher than normal refers to `T-CHO` > = 250",
+   "refs": [
+    "c:Laboratory.T-CHO"
+   ],
+   "support": 1,
+   "sources": [
+    1297
+   ]
+  },
+  {
+   "id": "k:47",
+   "text": "negative measure of degree of coagulation refers to KCT = '-'",
+   "refs": [
+    "c:Examination.KCT"
+   ],
+   "support": 1,
+   "sources": [
+    1297
+   ]
+  },
+  {
+   "id": "k:48",
+   "text": "oldest patient refers to MIN(birthday)",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1226
+   ]
+  },
+  {
+   "id": "k:49",
+   "text": "highest total cholesterol refers to MAX(T-CHO)",
+   "refs": [
+    "c:Laboratory.T-CHO"
+   ],
+   "support": 1,
+   "sources": [
+    1226
+   ]
+  },
+  {
+   "id": "k:50",
+   "text": "normal Ig G level refers to IGG > 900 and IGG < 2000",
+   "refs": [
+    "c:Laboratory.IGG"
+   ],
+   "support": 1,
+   "sources": [
+    1252
+   ]
+  },
+  {
+   "id": "k:51",
+   "text": "have symptoms refers to Symptoms IS NOT NULL",
+   "refs": [
+    "c:Examination.Symptoms"
+   ],
+   "support": 1,
+   "sources": [
+    1252
+   ]
+  },
+  {
+   "id": "k:52",
+   "text": "normal RF refers to RF < 20",
+   "refs": [
+    "c:Laboratory.RF"
+   ],
+   "support": 1,
+   "sources": [
+    1261
+   ]
+  },
+  {
+   "id": "k:53",
+   "text": "don't have thrombosis refers to Thrombosis = '0'",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1261
+   ]
+  },
+  {
+   "id": "k:54",
+   "text": "APS will result in Blood Clots in veins",
+   "refs": [
+    "c:Laboratory.C4",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1264
+   ]
+  },
+  {
+   "id": "k:55",
+   "text": "normal level of complement 4 refers to C4 > 10",
+   "refs": [
+    "c:Laboratory.C4"
+   ],
+   "support": 1,
+   "sources": [
+    1264
+   ]
+  },
+  {
+   "id": "k:56",
+   "text": "Should compute the number of different ones",
+   "refs": [
+    "c:Laboratory.C4",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1264
+   ]
+  },
+  {
+   "id": "k:57",
+   "text": "normal anti-SM refers to SM IN('-', '+-')",
+   "refs": [
+    "c:Laboratory.SM"
+   ],
+   "support": 1,
+   "sources": [
+    1267
+   ]
+  },
+  {
+   "id": "k:58",
+   "text": "SM = 'negative' means '-'",
+   "refs": [
+    "c:Laboratory.SM"
+   ],
+   "support": 1,
+   "sources": [
+    1267
+   ]
+  },
+  {
+   "id": "k:59",
+   "text": "SM = '0' means '+-'",
+   "refs": [
+    "c:Laboratory.SM"
+   ],
+   "support": 1,
+   "sources": [
+    1267
+   ]
+  },
+  {
+   "id": "k:60",
+   "text": "SM = '1' means '+'",
+   "refs": [
+    "c:Laboratory.SM"
+   ],
+   "support": 1,
+   "sources": [
+    1267
+   ]
+  },
+  {
+   "id": "k:61",
+   "text": "does not have thrombosis refers to Thrombosis = 0",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1267
+   ]
+  },
+  {
+   "id": "k:62",
+   "text": "followed at the outpatient clinic refers to Admission = '-'",
+   "refs": [
+    "c:Patient.Admission"
+   ],
+   "support": 2,
+   "sources": [
+    1287,
+    1307
+   ]
+  },
+  {
+   "id": "k:63",
+   "text": "normal level of alkaliphophatase refers to ALP < 300",
+   "refs": [
+    "c:Laboratory.ALP"
+   ],
+   "support": 1,
+   "sources": [
+    1287
+   ]
+  },
+  {
+   "id": "k:64",
+   "text": "normal level of triglyceride refers to TG < 200",
+   "refs": [
+    "c:Laboratory.TG"
+   ],
+   "support": 1,
+   "sources": [
+    1299
+   ]
+  },
+  {
+   "id": "k:65",
+   "text": "have other symptoms refers to Symptoms is not null",
+   "refs": [
+    "c:Examination.Symptoms"
+   ],
+   "support": 1,
+   "sources": [
+    1299
+   ]
+  },
+  {
+   "id": "k:66",
+   "text": "normal blood glucose refers to GLU < 180",
+   "refs": [
+    "c:Laboratory.GLU"
+   ],
+   "support": 1,
+   "sources": [
+    1304
+   ]
+  },
+  {
+   "id": "k:67",
+   "text": "don't have thrombosis refers to Thrombosis = 0",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1304
+   ]
+  },
+  {
+   "id": "k:68",
+   "text": "normal platelet level refers to PLT > 100 and PLT < 400",
+   "refs": [
+    "c:Laboratory.PLT"
+   ],
+   "support": 1,
+   "sources": [
+    1308
+   ]
+  },
+  {
+   "id": "k:69",
+   "text": "have other symptoms refers to Diagnosis is not null",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.Symptoms",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1308
+   ]
+  },
+  {
+   "id": "k:70",
+   "text": "severe thrombosis refers to Thrombosis = 2 or 1",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1311
+   ]
+  },
+  {
+   "id": "k:71",
+   "text": "normal prothrombin time refers to PT < 14",
+   "refs": [
+    "c:Laboratory.PT"
+   ],
+   "support": 1,
+   "sources": [
+    1311
+   ]
+  },
+  {
+   "id": "k:72",
+   "text": "born on 1959/2/18 refers to Birthday = '1959-02-18'",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1185
+   ]
+  },
+  {
+   "id": "k:73",
+   "text": "calculation = SUBTRACT(SUM(Birthday = '1959-02-18' and Date like '1981-11-%' THEN `T-CHO`), SUM(Birthday = '1959-02-18' and Date like '1981-12-%' THEN `T-CHO`))",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.T-CHO",
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1185
+   ]
+  },
+  {
+   "id": "k:74",
+   "text": "diagnosed with SJS refers to Diagnosis = 'SJS'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1289
+   ]
+  },
+  {
+   "id": "k:75",
+   "text": "normal level of total protein refers to TP > 6.0 and TP < 8.5",
+   "refs": [
+    "c:Laboratory.TP"
+   ],
+   "support": 1,
+   "sources": [
+    1289
+   ]
+  },
+  {
+   "id": "k:76",
+   "text": "severe degree of thrombosis refers to thrombosis = 2",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1157
+   ]
+  },
+  {
+   "id": "k:77",
+   "text": "disease refers to diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1157
+   ]
+  },
+  {
+   "id": "k:78",
+   "text": "age refers to SUBTRACT(year(current_timestamp), year(Birthday))",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 2,
+   "sources": [
+    1211,
+    1156
+   ]
+  },
+  {
+   "id": "k:79",
+   "text": "lactate dehydrogenase (LDH) between 100-300 index above the normal range refers to LDH between 600 and 800",
+   "refs": [
+    "c:Laboratory.LDH"
+   ],
+   "support": 1,
+   "sources": [
+    1211
+   ]
+  },
+  {
+   "id": "k:80",
+   "text": "triglyceride (TG) index greater than 100 of the normal range refers to TG > 300",
+   "refs": [
+    "c:Laboratory.TG"
+   ],
+   "support": 1,
+   "sources": [
+    1228
+   ]
+  },
+  {
+   "id": "k:81",
+   "text": "came at the hospital in 1997 refers to year(Description) = '1997'",
+   "refs": [
+    "c:Patient.Description"
+   ],
+   "support": 1,
+   "sources": [
+    1162
+   ]
+  },
+  {
+   "id": "k:82",
+   "text": "immediately followed at the outpatient clinic refers to Admission = '-'",
+   "refs": [
+    "c:Patient.Admission"
+   ],
+   "support": 1,
+   "sources": [
+    1162
+   ]
+  },
+  {
+   "id": "k:83",
+   "text": "normal level of anti-centromere refers to CENTROMEA IN('-', '+-')",
+   "refs": [
+    "c:Laboratory.CENTROMEA"
+   ],
+   "support": 1,
+   "sources": [
+    1275
+   ]
+  },
+  {
+   "id": "k:84",
+   "text": "normal level of anti-SSB refers to SSB IN('-', '+-')",
+   "refs": [
+    "c:Laboratory.SSB"
+   ],
+   "support": 1,
+   "sources": [
+    1275
+   ]
+  },
+  {
+   "id": "k:85",
+   "text": "Should consider DISTINCT in the final result",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Laboratory.CENTROMEA",
+    "c:Laboratory.CPK",
+    "c:Laboratory.ID",
+    "c:Laboratory.IGG",
+    "c:Laboratory.SC170",
+    "c:Laboratory.SSB",
+    "c:Laboratory.TG",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ],
+   "support": 5,
+   "sources": [
+    1275,
+    1231,
+    1251,
+    1270,
+    1229
+   ]
+  },
+  {
+   "id": "k:86",
+   "text": "male patients refers to Sex = 'M'",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 2,
+   "sources": [
+    1247,
+    1231
+   ]
+  },
+  {
+   "id": "k:87",
+   "text": "normal level of white blood cells refers to WBC > 3.5 and WBC <9.0",
+   "refs": [
+    "c:Laboratory.WBC"
+   ],
+   "support": 1,
+   "sources": [
+    1247
+   ]
+  },
+  {
+   "id": "k:88",
+   "text": "abnormal fibrinogen level refers to FG < = 150 or FG > = 450",
+   "refs": [
+    "c:Laboratory.FG"
+   ],
+   "support": 1,
+   "sources": [
+    1247
+   ]
+  },
+  {
+   "id": "k:89",
+   "text": "Don't compute repetitive ones",
+   "refs": [
+    "c:Laboratory.FG",
+    "c:Laboratory.ID",
+    "c:Laboratory.WBC",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1247
+   ]
+  },
+  {
+   "id": "k:90",
+   "text": "abnormal Ig M level refers to IGM <=40 OR IGM >= 400",
+   "refs": [
+    "c:Laboratory.IGM"
+   ],
+   "support": 1,
+   "sources": [
+    1255
+   ]
+  },
+  {
+   "id": "k:91",
+   "text": "most common disease refers to MAX(COUNT(Diagnosis))",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1255
+   ]
+  },
+  {
+   "id": "k:92",
+   "text": "'Behcet' refers to diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1186
+   ]
+  },
+  {
+   "id": "k:93",
+   "text": "exam between 01/01/1997 and 12/31/1997 refers to YEAR(Description) > = '1997-1-1' AND YEAR(Description) < '1998-1-1'",
+   "refs": [
+    "c:Patient.Description"
+   ],
+   "support": 1,
+   "sources": [
+    1186
+   ]
+  },
+  {
+   "id": "k:94",
+   "text": "born between 1936-1956 refers to year(Birthday) BETWEEN '1936' AND '1956'",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1231
+   ]
+  },
+  {
+   "id": "k:95",
+   "text": "creatinine phosphokinase beyond the normal range refers to CPK > = 250",
+   "refs": [
+    "c:Laboratory.CPK"
+   ],
+   "support": 1,
+   "sources": [
+    1231
+   ]
+  },
+  {
+   "id": "k:96",
+   "text": "creatinine level is abnormal refers to CRE >= 1.5",
+   "refs": [
+    "c:Laboratory.CRE"
+   ],
+   "support": 1,
+   "sources": [
+    1257
+   ]
+  },
+  {
+   "id": "k:97",
+   "text": "aren't 70 yet refers to SUBTRACT((YEAR(CURDATE()), YEAR(Birthday))) < 70",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1257
+   ]
+  },
+  {
+   "id": "k:98",
+   "text": "Hematoclit is normal refers to 29 < N < 52",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.aCL IgA",
+    "c:Laboratory.HCT",
+    "c:Laboratory.ID",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1263
+   ]
+  },
+  {
+   "id": "k:99",
+   "text": "highest anti-Cardiolipin antibody concentration refers to MAX(`aCL IgA`)",
+   "refs": [
+    "c:Examination.aCL IgA"
+   ],
+   "support": 1,
+   "sources": [
+    1263
+   ]
+  },
+  {
+   "id": "k:100",
+   "text": "Ig G higher than normal refers to IGG >= 2000",
+   "refs": [
+    "c:Laboratory.IGG"
+   ],
+   "support": 1,
+   "sources": [
+    1251
+   ]
+  },
+  {
+   "id": "k:101",
+   "text": "creatinine (CRE) out of the normal range refers to CRE > = 1.5",
+   "refs": [
+    "c:Laboratory.CRE"
+   ],
+   "support": 1,
+   "sources": [
+    1222
+   ]
+  },
+  {
+   "id": "k:102",
+   "text": "abnormal level of glutamic oxaloacetic transaminase refers to GOT > = 60",
+   "refs": [
+    "c:Laboratory.GOT"
+   ],
+   "support": 2,
+   "sources": [
+    1279,
+    1281
+   ]
+  },
+  {
+   "id": "k:103",
+   "text": "percentage = MULTIPLY(DIVIDE(COUNT(ID WHERE GOT > = 60 AND Diagnosis = 'SLE'), COUNT(ID WHERE GOT > = 60)), 1.0)",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.ID",
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1279
+   ]
+  },
+  {
+   "id": "k:104",
+   "text": "highest glutamic pylvic transaminase in the normal range refers to MAX(GPT < 60)",
+   "refs": [
+    "c:Laboratory.GPT"
+   ],
+   "support": 1,
+   "sources": [
+    1282
+   ]
+  },
+  {
+   "id": "k:105",
+   "text": "normal anti-scl70 refers to SC170 IN('negative', '0')",
+   "refs": [
+    "c:Laboratory.SC170"
+   ],
+   "support": 1,
+   "sources": [
+    1270
+   ]
+  },
+  {
+   "id": "k:106",
+   "text": "does not have any symptom refers to symptoms IS NULL",
+   "refs": [
+    "c:Examination.Symptoms"
+   ],
+   "support": 1,
+   "sources": [
+    1270
+   ]
+  },
+  {
+   "id": "k:107",
+   "text": "DATEDIFF(`Examination Date`, `First Date`)",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Patient.First Date"
+   ],
+   "support": 1,
+   "sources": [
+    1204
+   ]
+  },
+  {
+   "id": "k:108",
+   "text": "positive degree of coagulation refers to RVVT = '+'",
+   "refs": [
+    "c:Examination.RVVT"
+   ],
+   "support": 1,
+   "sources": [
+    1156
+   ]
+  },
+  {
+   "id": "k:109",
+   "text": "the highest total bilirubin refers to MAX(T-BIL)",
+   "refs": [
+    "c:Laboratory.T-BIL"
+   ],
+   "support": 1,
+   "sources": [
+    1224
+   ]
+  },
+  {
+   "id": "k:110",
+   "text": "gender means SEX",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1178
+   ]
+  },
+  {
+   "id": "k:111",
+   "text": "'AORTITIS' refers to Diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1178
+   ]
+  },
+  {
+   "id": "k:112",
+   "text": "average age of patients as of year 1999 refers to AVG(SUBTRACT('1999', year(Birthday)))",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1174
+   ]
+  },
+  {
+   "id": "k:113",
+   "text": "October of 1991 refers to Date BETWEEN '1991-10-01' AND '1991-10-30'",
+   "refs": [
+    "c:Laboratory.Date"
+   ],
+   "support": 1,
+   "sources": [
+    1174
+   ]
+  },
+  {
+   "id": "k:114",
+   "text": "normal prothrombin time refer to PT < 14",
+   "refs": [
+    "c:Laboratory.PT"
+   ],
+   "support": 1,
+   "sources": [
+    1310
+   ]
+  },
+  {
+   "id": "k:115",
+   "text": "average prothrombin time = AVG(PT)",
+   "refs": [
+    "c:Laboratory.PT"
+   ],
+   "support": 1,
+   "sources": [
+    1310
+   ]
+  },
+  {
+   "id": "k:116",
+   "text": "APS diagnosis refers to Diagnosis='APS'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1198
+   ]
+  },
+  {
+   "id": "k:117",
+   "text": "'SLE' diagnosed patient means Diagnosis = 'SLE'",
+   "refs": [
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1152
+   ]
+  },
+  {
+   "id": "k:118",
+   "text": "inpatient refers to Admission = '+'",
+   "refs": [
+    "c:Patient.Admission"
+   ],
+   "support": 1,
+   "sources": [
+    1152
+   ]
+  },
+  {
+   "id": "k:119",
+   "text": "outpatient refers to Admission = '-'",
+   "refs": [
+    "c:Patient.Admission"
+   ],
+   "support": 2,
+   "sources": [
+    1152,
+    1230
+   ]
+  },
+  {
+   "id": "k:120",
+   "text": "calculation =  DIVIDE(COUNT(ID) where Diagnosis = 'SLE' and Admission = '+', COUNT(ID) where Diagnosis = 'SLE' and Admission = '-')",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.ID",
+    "c:Laboratory.ID",
+    "c:Patient.Admission",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1152
+   ]
+  },
+  {
+   "id": "k:121",
+   "text": "normal Ig A level refers to IGA > 80 AND IGA < 500",
+   "refs": [
+    "c:Laboratory.IGA"
+   ],
+   "support": 1,
+   "sources": [
+    1254
+   ]
+  },
+  {
+   "id": "k:122",
+   "text": "came to the hospital after 1990/1/1 refers to YEAR(`First Date`) > = 1990",
+   "refs": [
+    "c:Patient.First Date"
+   ],
+   "support": 1,
+   "sources": [
+    1254
+   ]
+  },
+  {
+   "id": "k:123",
+   "text": "normal anti-SSA refers to SSA IN('-','+-')",
+   "refs": [
+    "c:Laboratory.SSA"
+   ],
+   "support": 1,
+   "sources": [
+    1271
+   ]
+  },
+  {
+   "id": "k:124",
+   "text": "came to the hospital before 2000 refers to YEAR(`First Date`) < 2000",
+   "refs": [
+    "c:Patient.First Date"
+   ],
+   "support": 1,
+   "sources": [
+    1271
+   ]
+  },
+  {
+   "id": "k:125",
+   "text": "Should compute the number of distinct ones",
+   "refs": [
+    "c:Examination.ANA Pattern",
+    "c:Examination.ID",
+    "c:Laboratory.C3",
+    "c:Laboratory.Date",
+    "c:Laboratory.ID",
+    "c:Laboratory.SSA",
+    "c:Patient.ID"
+   ],
+   "support": 2,
+   "sources": [
+    1271,
+    1262
+   ]
+  },
+  {
+   "id": "k:126",
+   "text": "normal level of IGG refers to 900 < IGG < 2000",
+   "refs": [
+    "c:Laboratory.IGG"
+   ],
+   "support": 1,
+   "sources": [
+    1278
+   ]
+  },
+  {
+   "id": "k:127",
+   "text": "admitted to the hospital refers to Admission = '+'",
+   "refs": [
+    "c:Patient.Admission"
+   ],
+   "support": 1,
+   "sources": [
+    1278
+   ]
+  },
+  {
+   "id": "k:128",
+   "text": "total bilirubin is over the normal range refers to `T-BIL` > = 2.0",
+   "refs": [
+    "c:Laboratory.T-BIL"
+   ],
+   "support": 1,
+   "sources": [
+    1295
+   ]
+  },
+  {
+   "id": "k:129",
+   "text": "peripheral pattern is observed in the sheet of ANA examination refers to that ANA Pattern contains 'P'",
+   "refs": [
+    "c:Examination.ANA"
+   ],
+   "support": 1,
+   "sources": [
+    1295
+   ]
+  },
+  {
+   "id": "k:130",
+   "text": "total cholesterol is within the normal range refers to `T-CHO` < 250",
+   "refs": [
+    "c:Laboratory.T-CHO"
+   ],
+   "support": 1,
+   "sources": [
+    1298
+   ]
+  },
+  {
+   "id": "k:131",
+   "text": "P pattern observed in the sheet of ANA examination refers to ANA Pattern = 'P'",
+   "refs": [
+    "c:Examination.ANA"
+   ],
+   "support": 1,
+   "sources": [
+    1298
+   ]
+  },
+  {
+   "id": "k:132",
+   "text": "How old the patient refers to SUBTRACT(year(`Examination Date`), year(Birthday))",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1175
+   ]
+  },
+  {
+   "id": "k:133",
+   "text": "the highest hemoglobin count refers to MAX(HGB)",
+   "refs": [
+    "c:Laboratory.HGB"
+   ],
+   "support": 1,
+   "sources": [
+    1175
+   ]
+  },
+  {
+   "id": "k:134",
+   "text": "patient who were born after 1930 refers to year(Birthday) > '1930'",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1150
+   ]
+  },
+  {
+   "id": "k:135",
+   "text": "calculation = DIVIDE(COUNT(ID) where year(Birthday) > '1930' and SEX = 'F'), (COUNT(ID) where SEX = 'F')",
+   "refs": [
+    "c:Examination.ID",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1150
+   ]
+  },
+  {
+   "id": "k:136",
+   "text": "triglyceride (TG) level beyond the normal range refers to TG > = 200",
+   "refs": [
+    "c:Laboratory.TG"
+   ],
+   "support": 1,
+   "sources": [
+    1229
+   ]
+  },
+  {
+   "id": "k:137",
+   "text": "more than 50 years of age = SUBTRACT(year(current_timestamp), year(Birthday)) > 50",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1229
+   ]
+  },
+  {
+   "id": "k:138",
+   "text": "laboratory examinations in 1991 refers to Date like '1991%'",
+   "refs": [
+    "c:Laboratory.Date"
+   ],
+   "support": 1,
+   "sources": [
+    1240
+   ]
+  },
+  {
+   "id": "k:139",
+   "text": "average hematoclit level = AVG(HCT)",
+   "refs": [
+    "c:Laboratory.HCT"
+   ],
+   "support": 1,
+   "sources": [
+    1240
+   ]
+  },
+  {
+   "id": "k:140",
+   "text": "hematoclit level that is lower than the normal range refers to HCT < 29",
+   "refs": [
+    "c:Laboratory.HCT"
+   ],
+   "support": 1,
+   "sources": [
+    1240
+   ]
+  },
+  {
+   "id": "k:141",
+   "text": "RBC < = 3.5 or RBC > = 6.0 means the patient has an abnormal level of red blood cell",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.RBC",
+    "c:Patient.Admission",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1307
+   ]
+  },
+  {
+   "id": "k:142",
+   "text": "3.5 < RBC < 6.0 means the patient has a normal level of red blood cell",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.RBC",
+    "c:Patient.Admission",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1307
+   ]
+  },
+  {
+   "id": "k:143",
+   "text": "total protein not within the normal range refers to TP < '6.0' or TP > '8.5'",
+   "refs": [
+    "c:Laboratory.TP"
+   ],
+   "support": 1,
+   "sources": [
+    1160
+   ]
+  },
+  {
+   "id": "k:144",
+   "text": "calculation = DIVIDE((ID where sex = 'F' and TP < '6.0' or TP > '8.5'), COUNT(ID)) * 100",
+   "refs": [
+    "c:Examination.ID",
+    "c:Laboratory.ID",
+    "c:Laboratory.TP",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1160
+   ]
+  },
+  {
+   "id": "k:145",
+   "text": "symptoms observed refers to the symptoms is not NULL",
+   "refs": [
+    "c:Examination.Symptoms"
+   ],
+   "support": 1,
+   "sources": [
+    1166
+   ]
+  },
+  {
+   "id": "k:146",
+   "text": "normal level of complement 3 refers to C3 > 35",
+   "refs": [
+    "c:Laboratory.C3"
+   ],
+   "support": 1,
+   "sources": [
+    1262
+   ]
+  },
+  {
+   "id": "k:147",
+   "text": "have a P pattern observed in the sheet of ANA examination refers to ANA Pattern = 'P'",
+   "refs": [
+    "c:Examination.ANA"
+   ],
+   "support": 1,
+   "sources": [
+    1262
+   ]
+  },
+  {
+   "id": "k:148",
+   "text": "AST glutamic oxaloacetic transaminase (GOT) index is above the normal range refers to GOT > = 60",
+   "refs": [
+    "c:Laboratory.GOT"
+   ],
+   "support": 1,
+   "sources": [
+    1206
+   ]
+  },
+  {
+   "id": "k:149",
+   "text": "when refers to DATE",
+   "refs": [
+    "c:Laboratory.Date"
+   ],
+   "support": 1,
+   "sources": [
+    1206
+   ]
+  },
+  {
+   "id": "k:150",
+   "text": "born after 1980/1/1 refers to Birthday > '1980-01-01'",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1248
+   ]
+  },
+  {
+   "id": "k:151",
+   "text": "normal fibrinogen level refers to FG between 150 and 450",
+   "refs": [
+    "c:Laboratory.FG"
+   ],
+   "support": 1,
+   "sources": [
+    1248
+   ]
+  },
+  {
+   "id": "k:152",
+   "text": "Should return the number of distinct patients",
+   "refs": [
+    "c:Laboratory.FG",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1248
+   ]
+  },
+  {
+   "id": "k:153",
+   "text": "underage patients refers to year(Birthday) < 18",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1171
+   ]
+  },
+  {
+   "id": "k:154",
+   "text": "three-year period from 1990 to 1993 refers to year(`Examination Date`) between '1990' and '1993'",
+   "refs": [
+    "c:Examination.Examination Date"
+   ],
+   "support": 1,
+   "sources": [
+    1171
+   ]
+  },
+  {
+   "id": "k:155",
+   "text": "abnormal C-reactive protein refers to CRP ='+'",
+   "refs": [
+    "c:Laboratory.CRP"
+   ],
+   "support": 1,
+   "sources": [
+    1256
+   ]
+  },
+  {
+   "id": "k:156",
+   "text": "don't have data recorded refers to Description IS NULL",
+   "refs": [
+    "c:Patient.Description"
+   ],
+   "support": 1,
+   "sources": [
+    1256
+   ]
+  },
+  {
+   "id": "k:157",
+   "text": "'30609' is the Patient ID",
+   "refs": [
+    "c:Patient.ID"
+   ],
+   "support": 1,
+   "sources": [
+    1153
+   ]
+  },
+  {
+   "id": "k:158",
+   "text": "disease means Diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1153
+   ]
+  },
+  {
+   "id": "k:159",
+   "text": "highest Ig A within the normal range refers to MAX(IGA BETWEEN 80 AND 500)",
+   "refs": [
+    "c:Laboratory.IGA"
+   ],
+   "support": 1,
+   "sources": [
+    1253
+   ]
+  },
+  {
+   "id": "k:160",
+   "text": "who were born in 1937 refers to year(birthday) = '1937'",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1158
+   ]
+  },
+  {
+   "id": "k:161",
+   "text": "total cholesterol was beyond the normal range refers to `T-CHO` > = '250'",
+   "refs": [
+    "c:Laboratory.T-CHO"
+   ],
+   "support": 1,
+   "sources": [
+    1158
+   ]
+  },
+  {
+   "id": "k:162",
+   "text": "age refers to SUBTRACT(YEAR(`First Date`),YEAR(Birthday))",
+   "refs": [
+    "c:Patient.Birthday",
+    "c:Patient.First Date"
+   ],
+   "support": 1,
+   "sources": [
+    1163
+   ]
+  },
+  {
+   "id": "k:163",
+   "text": "abnormal level of anti-DNA refers to DNA > = 8",
+   "refs": [
+    "c:Laboratory.DNA"
+   ],
+   "support": 1,
+   "sources": [
+    1276
+   ]
+  },
+  {
+   "id": "k:164",
+   "text": "diseases refers to Diagnosis",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Patient.Diagnosis"
+   ],
+   "support": 1,
+   "sources": [
+    1276
+   ]
+  },
+  {
+   "id": "k:165",
+   "text": "AST glutamic oxaloacetic transaminase (GOT) index is within normal range refers to GOT < 60",
+   "refs": [
+    "c:Laboratory.GOT"
+   ],
+   "support": 1,
+   "sources": [
+    1207
+   ]
+  },
+  {
+   "id": "k:166",
+   "text": "examination in 1994 refers to year(Date) = 1994",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1207
+   ]
+  },
+  {
+   "id": "k:167",
+   "text": "creatinine level is normal refers to CRE < 1.5",
+   "refs": [
+    "c:Laboratory.CRE"
+   ],
+   "support": 1,
+   "sources": [
+    1294
+   ]
+  },
+  {
+   "id": "k:168",
+   "text": "anti Cardiolipin antibody concentration level is the highest refers to MAX(aCL IgA)",
+   "refs": [
+    "c:Laboratory.IGA"
+   ],
+   "support": 1,
+   "sources": [
+    1294
+   ]
+  },
+  {
+   "id": "k:169",
+   "text": "ALT glutamic pylvic transaminase beyond the normal range refers to GPT > 60",
+   "refs": [
+    "c:Laboratory.GPT"
+   ],
+   "support": 1,
+   "sources": [
+    1209
+   ]
+  },
+  {
+   "id": "k:170",
+   "text": "male = SEX = 'M'",
+   "refs": [
+    "c:Patient.SEX"
+   ],
+   "support": 1,
+   "sources": [
+    1216
+   ]
+  },
+  {
+   "id": "k:171",
+   "text": "albumin not within range refers to ALB < = 3.5 or ALB > = 5.5",
+   "refs": [
+    "c:Laboratory.ALB"
+   ],
+   "support": 1,
+   "sources": [
+    1216
+   ]
+  },
+  {
+   "id": "k:172",
+   "text": "no thrombosis refers to Thrombosis = 0",
+   "refs": [
+    "c:Examination.Thrombosis"
+   ],
+   "support": 1,
+   "sources": [
+    1301
+   ]
+  },
+  {
+   "id": "k:173",
+   "text": "abnormal level of creatinine phosphokinase refers to CPK < 250",
+   "refs": [
+    "c:Laboratory.CPK"
+   ],
+   "support": 1,
+   "sources": [
+    1301
+   ]
+  },
+  {
+   "id": "k:174",
+   "text": "age = SUBTRACT(year(current_timestamp), year(Birthday))",
+   "refs": [
+    "c:Patient.Birthday"
+   ],
+   "support": 1,
+   "sources": [
+    1232
+   ]
+  },
+  {
+   "id": "k:175",
+   "text": "blood glucose (GLU) not within normal range refers to GLU > = 180",
+   "refs": [
+    "c:Laboratory.GLU"
+   ],
+   "support": 1,
+   "sources": [
+    1232
+   ]
+  },
+  {
+   "id": "k:176",
+   "text": "total cholesterol(T-CHO) within normal range refers to `T-CHO` < 250",
+   "refs": [
+    "c:Laboratory.T-CHO"
+   ],
+   "support": 1,
+   "sources": [
+    1232
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "id": "x:1154",
+   "qid": 1154,
+   "question": "State the sex and birthday of patient ID '163109'. When was the examination taken and what symptom does the patient had.",
+   "evidence": "When was the examination taken refers to `Examination Date`",
+   "sql": "SELECT T1.SEX, T1.Birthday, T2.`Examination Date`, T2.Symptoms FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T1.ID = 163109",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1221",
+   "qid": 1221,
+   "question": "Provide the ID, sex, birthday of all patients diagnosed with 'RA' that are within the UN normal index.",
+   "evidence": "within the UN normal index refers to UN < 30; Diagnosis = 'RA'",
+   "sql": "SELECT DISTINCT T1.ID, T1.SEX, T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.UN < 30 AND T1.Diagnosis = 'RA'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.RA",
+    "c:Laboratory.UN",
+    "c:Patient.Birthday",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1292",
+   "qid": 1292,
+   "question": "What is the anti Cardiolipin antibody concentration of the female patient with the highest uric acid level in the normal range?",
+   "evidence": "anti Cardiolipin antibody concentration refers to `aCL IgG`, `aCL IgM`, `aCL IgA`; female patient refers to Sex = F'; highest uric acid level in the normal range refers to MAX(UA > 6.50);",
+   "sql": "SELECT T3.`aCL IgG`, T3.`aCL IgM`, T3.`aCL IgA` FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T3.ID = T2.ID WHERE T1.SEX = 'F' AND T2.UA > 6.5 ORDER BY T2.UA DESC LIMIT 1",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.aCL IgA",
+    "c:Examination.aCL IgG",
+    "c:Examination.aCL IgM",
+    "c:Laboratory.ID",
+    "c:Laboratory.UA",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1159",
+   "qid": 1159,
+   "question": "For patient with albumin level lower than 3.5, list their ID, sex and diagnosis.",
+   "evidence": "albumin level lower than 3.5 refers to ALB < 3.5;",
+   "sql": "SELECT DISTINCT T1.ID, T1.SEX, T1.Diagnosis FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.ALB < 3.5",
+   "refs": [
+    "c:Laboratory.ALB",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1172",
+   "qid": 1172,
+   "question": "How many male patients have elevated total bilirubin count?",
+   "evidence": "male refers to SEX = 'M'; elevated means above the normal range; total bilirubin above the normal range refers to `T-BIL` >= '2.0'",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.`T-BIL` >= 2.0 AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.T-BIL",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1302",
+   "qid": 1302,
+   "question": "For the patients with a normal range of creatinine phosphokinase, how many of them have a positive measure of degree of coagulation?",
+   "evidence": "normal range of creatinine phosphokinase refers to CPK < 250; positive measure of degree of coagulation refers to KCT = '+' or RVVT = '+' or LAC = '+' ;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T2.CPK < 250 AND (T3.KCT = '+' OR T3.RVVT = '+' OR T3.LAC = '+')",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.KCT",
+    "c:Examination.LAC",
+    "c:Examination.RVVT",
+    "c:Laboratory.CPK",
+    "c:Laboratory.ID",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1309",
+   "qid": 1309,
+   "question": "Please list a patient's platelet level if it is within the normal range and if he or she is diagnosed with MCTD.",
+   "evidence": "PLT > 100 and PLT < 400 means platelet level is within the normal range; PLT < 100 and PLT > 400 means platelet level is not within the normal range; diagnosed with MCTD refers to Diagnosis = 'MCTD';",
+   "sql": "SELECT T2.PLT FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.Diagnosis = 'MCTD' AND T2.PLT BETWEEN 100 AND 400",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.PLT",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1164",
+   "qid": 1164,
+   "question": "How many of the patients with the most serious thrombosis cases examined in 1997 are women?",
+   "evidence": "the most serious thrombosis refers to Thrombosis = '1' (the most severe one); women refers to sex = 'F'",
+   "sql": "SELECT  COUNT(*) FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T1.SEX = 'F' AND STRFTIME('%Y', T2.`Examination Date`) = '1997' AND T2.Thrombosis = 1",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1218",
+   "qid": 1218,
+   "question": "What is the percentage of the female patient whose uric acid (UA) beyond the normal range?",
+   "evidence": "uric acid (UA) beyond the normal range refers to UA > 8.0 and SEX = 'M' or UA > 6.5 and SEX = 'F'; female refers to Sex = 'F'",
+   "sql": "SELECT CAST(SUM(CASE WHEN T2.UA > 6.5 THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.SEX = 'F'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.UA",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1280",
+   "qid": 1280,
+   "question": "How many male patients have their glutamic oxaloacetic transaminase in the normal range?",
+   "evidence": "male refers to Sex = 'M'; glutamic oxaloacetic transaminase in the normal range refers to GOT < 60;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GOT < 60 AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1283",
+   "qid": 1283,
+   "question": "For the patients with the normal glutamic pylvic transaminase level, how many of them are male?",
+   "evidence": "normal glutamic pylvic transaminase level refers to GOT < 60; male refers to Sex = 'M';",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GOT < 60 AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1215",
+   "qid": 1215,
+   "question": "For all female patient with total protein (TP) beyond the normal index, what is the deviation of their TP idex from the normal.",
+   "evidence": "female refers to SEX = 'F'; total protein (TP) beyond the normal index refers to TP > 8.5; deviation of TP index from normal refers to SUBTRACT(TP, 8.5)",
+   "sql": "SELECT T2.TP - 8.5 FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.SEX = 'F' AND T2.TP > 8.5",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TP",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1170",
+   "qid": 1170,
+   "question": "How many patients hadn't undergone a medical examination until at least a year following their initial hospital visit?",
+   "evidence": "hadn't undergone a medical examination until at least a year refers to SUBTRACT(year(`Examination Date`), year(`First Date`)) > = 1",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T1.Admission = '+' AND STRFTIME('%Y', T2.`Examination Date`) - STRFTIME('%Y', T1.`First Date`) >= 1",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Patient.Admission",
+    "c:Patient.First Date",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1210",
+   "qid": 1210,
+   "question": "What is the average index of the lactate dehydrogenase (LDH) for all patients with lactate dehydrogenase (LDH) within the normal range.",
+   "evidence": "average index of the lactate dehydrogenase (LDH) refers to AVG(LDH); (LDH) within the normal range refers to LDH < 500",
+   "sql": "SELECT AVG(LDH) FROM Laboratory WHERE LDH < 500",
+   "refs": [
+    "c:Laboratory.LDH"
+   ]
+  },
+  {
+   "id": "x:1220",
+   "qid": 1220,
+   "question": "Provide all ID, sex and birthday of patients whose urea nitrogen (UN) just within the borderline of passing?",
+   "evidence": "urea nitrogen (UN) just within the borderline of passing refers to UN = 29; ",
+   "sql": "SELECT DISTINCT T1.ID, T1.SEX, T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.UN = 29",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.UN",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1169",
+   "qid": 1169,
+   "question": "What is the ratio of male to female patients among all those with abnormal uric acid counts?",
+   "evidence": "male refers to SEX = 'M'; female refers to SEX = 'F'; abnormal uric acid refers to UA < = '8.0' where SEX = 'M', UA < = '6.5' where SEX = 'F'; calculation = DIVIDE(SUM(UA <= '8.0' and SEX = 'M'), SUM(UA <= '6.5 and SEX = 'F'))",
+   "sql": "SELECT CAST(SUM(CASE WHEN T2.UA <= 8.0 AND T1.SEX = 'M' THEN 1 ELSE 0 END) AS REAL) / SUM(CASE WHEN T2.UA <= 6.5 AND T1.SEX = 'F' THEN 1 ELSE 0 END) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.UA",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1200",
+   "qid": 1200,
+   "question": "What proportion of patients who had signs of thrombocytopenia had SLE diagnosed?",
+   "evidence": "thrombocytopenia' refers to symptoms; 'SLE' refers to diagnosis; calculation =  DIVIDE(SUM(DIAGNOSIS LIKE '%ITP%'), SUM(DIAGNOSIS LIKE '%SLE%')) MULTIPLY 100",
+   "sql": "SELECT CAST(SUM(CASE WHEN Diagnosis = 'SLE' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(ID) FROM Examination WHERE Symptoms = 'thrombocytopenia'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.ID",
+    "c:Examination.Symptoms"
+   ]
+  },
+  {
+   "id": "x:1184",
+   "qid": 1184,
+   "question": "For the patient whose birthday was 1959/3/1, what symptoms did he/she have during the examination on 1993/9/27?",
+   "evidence": "",
+   "sql": "SELECT T2.Symptoms FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T1.Birthday = '1959-03-01' AND T2.`Examination Date` = '1993-09-27'",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1202",
+   "qid": 1202,
+   "question": "How many male patients who underwent testing between 1995 and 1997 and were subsequently diagnosed with Behcet disease did not stay in the hospital for treatment?",
+   "evidence": "male refers to SEX = 'M'; underwent testing between 1995 and 1997 refers to `Examination Date` between '1995' and '1997'; Behcet refers to diagnosis; did not stay in the hospital refers to Admission = '-'",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T2.Diagnosis = 'Behcet' AND T1.SEX = 'M' AND STRFTIME('%Y', T2.`Examination Date`) BETWEEN '1995' AND '1997' AND T1.Admission = '-'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Patient.Admission",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1291",
+   "qid": 1291,
+   "question": "How many male patients have a normal level of both albumin and total protein?",
+   "evidence": "male refers to Sex = 'M'; normal level of both albumin and total protein refers to ALB > 3.5 and ALB < 5.5 AND TP between 6.0 and 8.5;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.SEX = 'M'  AND T2.ALB > 3.5 AND T2.ALB < 5.5 AND T2.TP BETWEEN 6.0 AND 8.5",
+   "refs": [
+    "c:Laboratory.ALB",
+    "c:Laboratory.ID",
+    "c:Laboratory.TP",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1233",
+   "qid": 1233,
+   "question": "List each patient's ID and blood glucose (GLU) index that were within normal range for patient's whose data was first recorded in 1991.",
+   "evidence": "blood glucose (GLU) index that were within normal range refers to GLU < 180; data that was first recorded in 1991 refers to year(Description) = 1991;",
+   "sql": "SELECT DISTINCT T1.ID, T2.GLU FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE STRFTIME('%Y', T1.`First Date`) = '1991' AND T2.GLU < 180",
+   "refs": [
+    "c:Laboratory.GLU",
+    "c:Laboratory.ID",
+    "c:Patient.First Date",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1214",
+   "qid": 1214,
+   "question": "List ID, sex and date of birth of patient whose total protein (TP) below the lower range of the normal index.",
+   "evidence": "total protein (TP) below the lower range of the normal index refers to TP < 6.0",
+   "sql": "SELECT DISTINCT T1.ID, T1.SEX, T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.TP < 6.0",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TP",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1284",
+   "qid": 1284,
+   "question": "For the patient with the highest lactate dehydrogenase in the normal range, when was his or her data first recorded?",
+   "evidence": "highest lactate dehydrogenase in the normal range refers to MAX(LDH < 500); when the data first recorded refers to MIN(First Date);",
+   "sql": "SELECT T1.`First Date` FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.LDH < 500 ORDER BY T2.LDH ASC LIMIT 1",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.LDH",
+    "c:Patient.First Date",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1165",
+   "qid": 1165,
+   "question": "What is the age gap between the youngest and oldest patient with a normal triglyceride recorded?",
+   "evidence": "age gap refers to SUBTRACT(MAX(year(Birthday)) - MIN(year(Birthday))); normal triglyceride refers to tg > = 200",
+   "sql": "SELECT STRFTIME('%Y', MAX(T1.Birthday)) - STRFTIME('%Y', MIN(T1.Birthday)) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.TG >= 200",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TG",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1238",
+   "qid": 1238,
+   "question": "Among the patients who were diagnosed with SLE, who is the oldest with normal hemoglobin level. Provide the ID and sex.",
+   "evidence": "diagnosed with SLE refers to Diagnosis = 'SLE'; The larger the birthday value, the younger the person is, and vice versa; normal hemoglobin level refers to 10 < HGB < 17;",
+   "sql": "SELECT T1.ID, T1.SEX FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.Diagnosis = 'SLE' AND T2.HGB > 10 AND T2.HGB < 17 ORDER BY T1.Birthday ASC LIMIT 1",
+   "refs": [
+    "c:Laboratory.HGB",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1297",
+   "qid": 1297,
+   "question": "For the patients whose total cholesterol is higher than normal, how many of them have a negative measure of degree of coagulation?",
+   "evidence": "total cholesterol is higher than normal refers to `T-CHO` > = 250; negative measure of degree of coagulation refers to KCT = '-' ;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T2.`T-CHO` >= 250 AND T3.KCT = '-'",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.KCT",
+    "c:Laboratory.ID",
+    "c:Laboratory.T-CHO",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1226",
+   "qid": 1226,
+   "question": "Who is the oldest patient with the highest total cholesterol (T-CHO). State the patient ID and T-CHO index.",
+   "evidence": "oldest patient refers to MIN(birthday); highest total cholesterol refers to MAX(T-CHO);",
+   "sql": "SELECT T1.ID, T2.`T-CHO` FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID ORDER BY T2.`T-CHO` DESC, T1.Birthday ASC LIMIT 1",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.T-CHO",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1252",
+   "qid": 1252,
+   "question": "Among the patients with a normal Ig G level, how many of them have symptoms?",
+   "evidence": "normal Ig G level refers to IGG > 900 and IGG < 2000; have symptoms refers to Symptoms IS NOT NULL;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T3.ID = T2.ID WHERE T2.IGG BETWEEN 900 AND 2000 AND T3.Symptoms IS NOT NULL",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Laboratory.ID",
+    "c:Laboratory.IGG",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1261",
+   "qid": 1261,
+   "question": "How many patients with a normal RF don't have thrombosis?",
+   "evidence": "normal RF refers to RF < 20; don't have thrombosis refers to Thrombosis = '0';",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Examination AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.RF < 20 AND T1.Thrombosis = 0",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Laboratory.ID",
+    "c:Laboratory.RF"
+   ]
+  },
+  {
+   "id": "x:1264",
+   "qid": 1264,
+   "question": "Among the patients have blood clots in veins, how many of them have a normal level of complement 4?",
+   "evidence": "APS will result in Blood Clots in veins; normal level of complement 4 refers to C4 > 10; Should compute the number of different ones",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.C4 > 10 AND T1.Diagnosis = 'APS'",
+   "refs": [
+    "c:Laboratory.C4",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1267",
+   "qid": 1267,
+   "question": "Among the patients with normal anti-SM, how many of them does not have thrombosis?",
+   "evidence": "normal anti-SM refers to SM IN('-', '+-'); SM = 'negative' means '-'; SM = '0' means '+-'; SM = '1' means '+'; does not have thrombosis refers to Thrombosis = 0;",
+   "sql": "SELECT COUNT(T1.ID) FROM Examination AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.SM IN ('negative','0') AND T1.Thrombosis = 0",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Laboratory.ID",
+    "c:Laboratory.SM"
+   ]
+  },
+  {
+   "id": "x:1287",
+   "qid": 1287,
+   "question": "Among the patients followed at the outpatient clinic, how many of them have a normal level of alkaliphophatase?",
+   "evidence": "followed at the outpatient clinic refers to Admission = '-'; normal level of alkaliphophatase refers to ALP < 300;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.ALP < 300 AND T1.Admission = '-'",
+   "refs": [
+    "c:Laboratory.ALP",
+    "c:Laboratory.ID",
+    "c:Patient.Admission",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1299",
+   "qid": 1299,
+   "question": "Among the patients with the normal level of triglyceride, how many of them have other symptoms observed?",
+   "evidence": "normal level of triglyceride refers to TG < 200; have other symptoms refers to Symptoms is not null;",
+   "sql": "SELECT COUNT(T1.ID) FROM Examination AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.TG < 200 AND T1.Symptoms IS NOT NULL",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Laboratory.ID",
+    "c:Laboratory.TG"
+   ]
+  },
+  {
+   "id": "x:1304",
+   "qid": 1304,
+   "question": "Among the patients with a normal blood glucose, how many of them don't have thrombosis?",
+   "evidence": "normal blood glucose refers to GLU < 180; don't have thrombosis refers to Thrombosis = 0;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T2.GLU < 180 AND T3.Thrombosis = 0",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Laboratory.GLU",
+    "c:Laboratory.ID",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1308",
+   "qid": 1308,
+   "question": "Among the patients who have a normal platelet level, how many of them have other symptoms observed?",
+   "evidence": "normal platelet level refers to PLT > 100 and PLT < 400; have other symptoms refers to Diagnosis is not null;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.PLT > 100 AND T2.PLT < 400 AND T1.Diagnosis IS NOT NULL",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.PLT",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1311",
+   "qid": 1311,
+   "question": "How many patients with severe thrombosis have a normal prothrombin time?",
+   "evidence": "severe thrombosis refers to Thrombosis = 2 or 1; normal prothrombin time refers to PT < 14;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T2.PT < 14 AND T3.Thrombosis < 3 AND T3.Thrombosis > 0",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Laboratory.ID",
+    "c:Laboratory.PT",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1185",
+   "qid": 1185,
+   "question": "For the patient who was born on 1959/2/18, what is the decrease rate for his/her total cholesterol from November to December in 1981?",
+   "evidence": "born on 1959/2/18 refers to Birthday = '1959-02-18'; calculation = SUBTRACT(SUM(Birthday = '1959-02-18' and Date like '1981-11-%' THEN `T-CHO`), SUM(Birthday = '1959-02-18' and Date like '1981-12-%' THEN `T-CHO`))",
+   "sql": "SELECT CAST((SUM(CASE WHEN T2.Date LIKE '1981-11-%' THEN T2.`T-CHO` ELSE 0 END) - SUM(CASE WHEN T2.Date LIKE '1981-12-%' THEN T2.`T-CHO` ELSE 0 END)) AS REAL) / SUM(CASE WHEN T2.Date LIKE '1981-12-%' THEN T2.`T-CHO` ELSE 0 END) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.Birthday = '1959-02-18'",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.ID",
+    "c:Laboratory.T-CHO",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1289",
+   "qid": 1289,
+   "question": "For the patients who are diagnosed with SJS, how many of them have a normal level of total protein?",
+   "evidence": "diagnosed with SJS refers to Diagnosis = 'SJS'; normal level of total protein refers to TP > 6.0 and TP < 8.5;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.Diagnosis = 'SJS' AND T2.TP > 6.0 AND T2.TP < 8.5",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TP",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1157",
+   "qid": 1157,
+   "question": "For patients with severe degree of thrombosis, list their ID, sex and disease the patient is diagnosed with.",
+   "evidence": "severe degree of thrombosis refers to thrombosis = 2; disease refers to diagnosis;",
+   "sql": "SELECT DISTINCT T1.ID, T1.SEX, T1.Diagnosis FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T2.Thrombosis = 2",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1211",
+   "qid": 1211,
+   "question": "Provide the ID and age of patient with lactate dehydrogenase (LDH) between 100-300 index above the normal range.",
+   "evidence": "age refers to SUBTRACT(year(current_timestamp), year(Birthday)); lactate dehydrogenase (LDH) between 100-300 index above the normal range refers to LDH between 600 and 800;",
+   "sql": "SELECT DISTINCT T1.ID, STRFTIME('%Y', CURRENT_TIMESTAMP) - STRFTIME('%Y', T1.Birthday) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.LDH > 600 AND T2.LDH < 800",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.LDH",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1228",
+   "qid": 1228,
+   "question": "Provide list of patients and their diagnosis with triglyceride (TG) index greater than 100 of the normal range?",
+   "evidence": "triglyceride (TG) index greater than 100 of the normal range refers to TG > 300;",
+   "sql": "SELECT T1.ID, T1.Diagnosis FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.TG > 300",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TG",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1162",
+   "qid": 1162,
+   "question": "How many female patients who came at the hospital in 1997 was immediately followed at the outpatient clinic?",
+   "evidence": "female refers to sex = 'F'; came at the hospital in 1997 refers to year(Description) = '1997'; immediately followed at the outpatient clinic refers to Admission = '-'",
+   "sql": "SELECT COUNT(*) FROM Patient WHERE STRFTIME('%Y', Description) = '1997' AND SEX = 'F' AND Admission = '-'",
+   "refs": [
+    "c:Patient.Admission",
+    "c:Patient.Description",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1275",
+   "qid": 1275,
+   "question": "Among the patients who has a normal level of anti-centromere and a normal level of anti-SSB, how many of them are male?",
+   "evidence": "normal level of anti-centromere refers to CENTROMEA IN('-', '+-'); normal level of anti-SSB refers to SSB IN('-', '+-'); male refers to Sex = 'M'; Should consider DISTINCT in the final result;",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.CENTROMEA IN ('negative', '0') AND T2.SSB IN ('negative', '0') AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.CENTROMEA",
+    "c:Laboratory.ID",
+    "c:Laboratory.SSB",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1247",
+   "qid": 1247,
+   "question": "Among the male patients who have a normal level of white blood cells, how many of them have an abnormal fibrinogen level?",
+   "evidence": "male patients refers to Sex = 'M'; normal level of white blood cells refers to WBC > 3.5 and WBC <9.0; abnormal fibrinogen level refers to FG < = 150 or FG > = 450; Don't compute repetitive ones.",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.FG <= 150 OR T2.FG >= 450 AND T2.WBC > 3.5 AND T2.WBC < 9.0 AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.FG",
+    "c:Laboratory.ID",
+    "c:Laboratory.WBC",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1255",
+   "qid": 1255,
+   "question": "For the patients with an abnormal Ig M level, what is the most common disease they are diagnosed with?",
+   "evidence": "abnormal Ig M level refers to IGM <=40 OR IGM >= 400; most common disease refers to MAX(COUNT(Diagnosis));",
+   "sql": "SELECT T1.Diagnosis FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.IGM NOT BETWEEN 40 AND 400 GROUP BY T1.Diagnosis ORDER BY COUNT(T1.Diagnosis) DESC LIMIT 1",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.IGM",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1186",
+   "qid": 1186,
+   "question": "Lists all patients by ID who were diagnosed with Behcet's and had their exams between 01/01/197 and 12/31/1997.",
+   "evidence": "'Behcet' refers to diagnosis; exam between 01/01/1997 and 12/31/1997 refers to YEAR(Description) > = '1997-1-1' AND YEAR(Description) < '1998-1-1'",
+   "sql": "SELECT ID FROM Examination WHERE `Examination Date` BETWEEN '1997-01-01' AND '1997-12-31' AND Diagnosis = 'Behcet'",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.Examination Date",
+    "c:Examination.ID"
+   ]
+  },
+  {
+   "id": "x:1231",
+   "qid": 1231,
+   "question": "For patient born between 1936-1956, how many male patients have creatinine phosphokinase beyond the normal range?",
+   "evidence": "born between 1936-1956 refers to year(Birthday) BETWEEN '1936' AND '1956'; male patients refers to sex = 'M'; creatinine phosphokinase beyond the normal range refers to CPK > = 250; Should consider DISTINCT in the final result;",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE STRFTIME('%Y', T1.Birthday) BETWEEN '1936' AND '1956' AND T1.SEX = 'M' AND T2.CPK >= 250",
+   "refs": [
+    "c:Laboratory.CPK",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1257",
+   "qid": 1257,
+   "question": "Among the patients whose creatinine level is abnormal, how many of them aren't 70 yet?",
+   "evidence": "creatinine level is abnormal refers to CRE >= 1.5; aren't 70 yet refers to SUBTRACT((YEAR(CURDATE()), YEAR(Birthday))) < 70; ",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.CRE >= 1.5 AND STRFTIME('%Y', Date('now')) - STRFTIME('%Y', T1.Birthday) < 70",
+   "refs": [
+    "c:Laboratory.CRE",
+    "c:Laboratory.Date",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1263",
+   "qid": 1263,
+   "question": "Among the patients whose level of Hematoclit isn't normal, which patient has the highest anti-Cardiolipin antibody concentration? Please list his or her ID.",
+   "evidence": "Hematoclit is normal refers to 29 < N < 52; highest anti-Cardiolipin antibody concentration refers to MAX(`aCL IgA`);",
+   "sql": "SELECT DISTINCT T1.ID FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID INNER JOIN Laboratory AS T3 on T1.ID = T3.ID WHERE (T3.HCT >= 52 OR T3.HCT <= 29) ORDER BY T2.`aCL IgA` DESC LIMIT 1",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.aCL IgA",
+    "c:Laboratory.HCT",
+    "c:Laboratory.ID",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1251",
+   "qid": 1251,
+   "question": "How many patients with an Ig G higher than normal?",
+   "evidence": "Ig G higher than normal refers to IGG >= 2000; Should consider DISTINCT in the final result;",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T3.ID = T2.ID WHERE T2.IGG >= 2000",
+   "refs": [
+    "c:Examination.ID",
+    "c:Laboratory.ID",
+    "c:Laboratory.IGG",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1222",
+   "qid": 1222,
+   "question": "How many male patients are are with creatinine index out of the normal range?",
+   "evidence": "creatinine (CRE) out of the normal range refers to CRE > = 1.5; Male refers to Sex = 'M'",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.CRE >= 1.5 AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.CRE",
+    "c:Laboratory.ID",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1279",
+   "qid": 1279,
+   "question": "What is the percentage of patient who has a abnormal level of glutamic oxaloacetic transaminase level, yet he or she is diagnosed with SLE?",
+   "evidence": "abnormal level of glutamic oxaloacetic transaminase refers to GOT > = 60; percentage = MULTIPLY(DIVIDE(COUNT(ID WHERE GOT > = 60 AND Diagnosis = 'SLE'), COUNT(ID WHERE GOT > = 60)), 1.0);",
+   "sql": "SELECT COUNT(CASE WHEN T1.Diagnosis LIKE '%SLE%' THEN T1.ID ELSE 0 END) / COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.`GOT` >= 60",
+   "refs": [
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1282",
+   "qid": 1282,
+   "question": "Please list the top three patients' birthdays with the highest glutamic pylvic transaminase in the normal range.",
+   "evidence": "highest glutamic pylvic transaminase in the normal range refers to MAX(GPT < 60);",
+   "sql": "SELECT T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GPT < 60 ORDER BY T2.GPT DESC LIMIT 3",
+   "refs": [
+    "c:Laboratory.GPT",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1270",
+   "qid": 1270,
+   "question": "Among the patients who has a normal anti-scl70, how many of them are female and does not have any symptom?",
+   "evidence": "normal anti-scl70 refers to SC170 IN('negative', '0'); female refers to Sex = 'F'; does not have any symptom refers to symptoms IS NULL; Should consider DISTINCT in the final result;",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T3.ID = T2.ID WHERE (T2.SC170 = 'negative' OR T2.SC170 = '0') AND T1.SEX = 'F' AND T3.Symptoms IS NULL",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Laboratory.ID",
+    "c:Laboratory.SC170",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1204",
+   "qid": 1204,
+   "question": "How long did it take after patient number 821298 arrived at the hospital for the first time before her evaluation began?",
+   "evidence": "DATEDIFF(`Examination Date`, `First Date`)",
+   "sql": "SELECT STRFTIME('%d', T3.`Examination Date`) - STRFTIME('%d', T1.`First Date`) FROM Patient AS T1 INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T1.ID = 821298",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Patient.First Date",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1156",
+   "qid": 1156,
+   "question": "State the ID and age of patient with positive degree of coagulation.",
+   "evidence": "age refers to SUBTRACT(year(current_timestamp), year(Birthday)); positive degree of coagulation refers to RVVT = '+';",
+   "sql": "SELECT DISTINCT T1.ID, STRFTIME('%Y', CURRENT_TIMESTAMP) - STRFTIME('%Y', T1.Birthday) FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T2.RVVT = '+'",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.RVVT",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1224",
+   "qid": 1224,
+   "question": "What is the highest total bilirubin level recorded? List out the patient details with ID, sex and birthday with that index.",
+   "evidence": "the highest total bilirubin refers to MAX(T-BIL)",
+   "sql": "SELECT T2.`T-BIL`, T1.ID, T1.SEX, T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID ORDER BY T2.`T-BIL` DESC LIMIT 1",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.T-BIL",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1178",
+   "qid": 1178,
+   "question": "What was the gender of the first AORTITIS diagnosed patient?",
+   "evidence": "gender means SEX; 'AORTITIS' refers to Diagnosis;",
+   "sql": "SELECT SEX FROM Patient WHERE Diagnosis = 'AORTITIS' AND `First Date` IS NOT NULL ORDER BY `First Date` ASC LIMIT 1",
+   "refs": [
+    "c:Patient.Diagnosis",
+    "c:Patient.First Date",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1174",
+   "qid": 1174,
+   "question": "What is the average age of patients as of year 1999 examined in the laboratory for the October of the year 1991?",
+   "evidence": "average age of patients as of year 1999 refers to AVG(SUBTRACT('1999', year(Birthday))); October of 1991 refers to Date BETWEEN '1991-10-01' AND '1991-10-30'",
+   "sql": "SELECT AVG('1999'  - STRFTIME('%Y', T2.Birthday)) FROM Laboratory AS T1 INNER JOIN Patient AS T2 ON T1.ID = T2.ID WHERE T1.Date BETWEEN '1991-10-01' AND '1991-10-30'",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1310",
+   "qid": 1310,
+   "question": "For the male patients that have a normal prothrombin time, what is their average prothrombin time?",
+   "evidence": "male refers to Sex = 'M'; normal prothrombin time refer to PT < 14; average prothrombin time = AVG(PT);",
+   "sql": "SELECT AVG(T2.PT) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.PT < 14 AND T1.SEX = 'M'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.PT",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1198",
+   "qid": 1198,
+   "question": "How many female patients were given an APS diagnosis?",
+   "evidence": "female refers to SEX = 'F'; APS diagnosis refers to Diagnosis='APS'",
+   "sql": "SELECT COUNT(ID) FROM Patient WHERE SEX = 'F' AND Diagnosis = 'APS'",
+   "refs": [
+    "c:Patient.Diagnosis",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1152",
+   "qid": 1152,
+   "question": "What is the ratio of outpatient to inpatient followed up treatment among all the 'SLE' diagnosed patient?",
+   "evidence": "'SLE' diagnosed patient means Diagnosis = 'SLE'; inpatient refers to Admission = '+'; outpatient refers to Admission = '-'; calculation =  DIVIDE(COUNT(ID) where Diagnosis = 'SLE' and Admission = '+', COUNT(ID) where Diagnosis = 'SLE' and Admission = '-')",
+   "sql": "SELECT SUM(CASE WHEN Admission = '+' THEN 1.0 ELSE 0 END) / SUM(CASE WHEN Admission = '-' THEN 1 ELSE 0 END) FROM Patient WHERE Diagnosis = 'SLE'",
+   "refs": [
+    "c:Patient.Admission",
+    "c:Patient.Diagnosis"
+   ]
+  },
+  {
+   "id": "x:1254",
+   "qid": 1254,
+   "question": "How many patients with a normal Ig A level came to the hospital after 1990/1/1?",
+   "evidence": "normal Ig A level refers to IGA > 80 AND IGA < 500; came to the hospital after 1990/1/1 refers to YEAR(`First Date`) > = 1990;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.IGA BETWEEN 80 AND 500 AND  strftime('%Y',  T1.`First Date`) > '1990'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.IGA",
+    "c:Patient.First Date",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1271",
+   "qid": 1271,
+   "question": "How many patients with a normal anti-SSA came to the hospital before 2000?",
+   "evidence": "normal anti-SSA refers to SSA IN('-','+-'); came to the hospital before 2000 refers to YEAR(`First Date`) < 2000; Should compute the number of distinct ones",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.SSA IN ('negative', '0') AND STRFTIME('%Y', T2.Date) < '2000'",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.ID",
+    "c:Laboratory.SSA",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1278",
+   "qid": 1278,
+   "question": "Of the patients with an normal level of IGG, how many of them admitted to the hospital?",
+   "evidence": "normal level of IGG refers to 900 < IGG < 2000; admitted to the hospital refers to Admission = '+';",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.IGG > 900 AND T2.IGG <2000 AND  T1.Admission = '+'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.IGG",
+    "c:Patient.Admission",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1295",
+   "qid": 1295,
+   "question": "Among the patients whose total bilirubin is over the normal range, how many of them have a peripheral pattern observed in the sheet of ANA examination?",
+   "evidence": "total bilirubin is over the normal range refers to `T-BIL` > = 2.0; peripheral pattern is observed in the sheet of ANA examination refers to that ANA Pattern contains 'P';",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T2.`T-BIL` >= 2 AND T3.`ANA Pattern` LIKE '%P%'",
+   "refs": [
+    "c:Examination.ANA Pattern",
+    "c:Examination.ID",
+    "c:Laboratory.ID",
+    "c:Laboratory.T-BIL",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1298",
+   "qid": 1298,
+   "question": "Among the patients whose total cholesterol is within the normal range, how many of them have a P pattern observed in the sheet of ANA examination?",
+   "evidence": "total cholesterol is within the normal range refers to `T-CHO` < 250; P pattern observed in the sheet of ANA examination refers to ANA Pattern = 'P';",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID INNER JOIN Examination AS T3 ON T1.ID = T3.ID WHERE T3.`ANA Pattern` = 'P' AND T2.`T-CHO` < 250",
+   "refs": [
+    "c:Examination.ANA Pattern",
+    "c:Examination.ID",
+    "c:Laboratory.ID",
+    "c:Laboratory.T-CHO",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1175",
+   "qid": 1175,
+   "question": "How old was the patient who had the highest hemoglobin count at the time of the examination, and what is the doctor's diagnosis?",
+   "evidence": "How old the patient refers to SUBTRACT(year(`Examination Date`), year(Birthday)); the highest hemoglobin count refers to MAX(HGB)",
+   "sql": "SELECT STRFTIME('%Y', T2.Date) - STRFTIME('%Y', T1.Birthday), T1.Diagnosis FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID ORDER BY T2.HGB DESC LIMIT 1",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.HGB",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1150",
+   "qid": 1150,
+   "question": "What is the percentage of female patient were born after 1930?",
+   "evidence": "female refers to Sex = 'F'; patient who were born after 1930 refers to year(Birthday) > '1930'; calculation = DIVIDE(COUNT(ID) where year(Birthday) > '1930' and SEX = 'F'), (COUNT(ID) where SEX = 'F')",
+   "sql": "SELECT CAST(SUM(CASE WHEN STRFTIME('%Y', Birthday) > '1930' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Patient WHERE SEX = 'F'",
+   "refs": [
+    "c:Patient.Birthday",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1229",
+   "qid": 1229,
+   "question": "For all patients with triglyceride (TG) level beyond the normal range, how many are age more than 50 years?",
+   "evidence": "triglyceride (TG) level beyond the normal range refers to TG > = 200; more than 50 years of age = SUBTRACT(year(current_timestamp), year(Birthday)) > 50; Should consider DISTINCT in the final result;",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.TG >= 200 AND STRFTIME('%Y', CURRENT_TIMESTAMP) - STRFTIME('%Y', T1.Birthday) > 50",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TG",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1230",
+   "qid": 1230,
+   "question": "List all outpatient within normal range of creatinine phosphokinase. Give me the distinct ids.",
+   "evidence": "outpatient refers to Admission = '-'; normal range of creatinine phosphokinase refers to CPK < 250;",
+   "sql": "SELECT DISTINCT T1.ID FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.CPK < 250 AND T1.Admission = '-'",
+   "refs": [
+    "c:Laboratory.CPK",
+    "c:Laboratory.ID",
+    "c:Patient.Admission",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1240",
+   "qid": 1240,
+   "question": "From laboratory examinations in 1991, what is the average hematoclit level that is lower than the normal range.",
+   "evidence": "laboratory examinations in 1991 refers to Date like '1991%'; average hematoclit level = AVG(HCT); hematoclit level that is lower than the normal range refers to HCT < 29;",
+   "sql": "SELECT AVG(T2.HCT) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.HCT < 29 AND STRFTIME('%Y', T2.Date) = '1991'",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.HCT",
+    "c:Laboratory.ID",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1307",
+   "qid": 1307,
+   "question": "Please list the patient's ID if he or she has an abnormal level of red blood cell and is followed at the outpatient clinic.",
+   "evidence": "RBC < = 3.5 or RBC > = 6.0 means the patient has an abnormal level of red blood cell; 3.5 < RBC < 6.0 means the patient has a normal level of red blood cell; followed at the outpatient clinic refers to Admission = '-';",
+   "sql": "SELECT DISTINCT T1.ID FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE (T2.RBC <= 3.5 OR T2.RBC >= 6) AND T1.Admission = '-'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.RBC",
+    "c:Patient.Admission",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1160",
+   "qid": 1160,
+   "question": "What is the percentage of female patient had total protein not within the normal range?",
+   "evidence": "female refers to sex = 'F'; total protein not within the normal range refers to TP < '6.0' or TP > '8.5'; calculation = DIVIDE((ID where sex = 'F' and TP < '6.0' or TP > '8.5'), COUNT(ID)) * 100",
+   "sql": "SELECT CAST(SUM(CASE WHEN T1.SEX = 'F' AND (T2.TP < 6.0 OR T2.TP > 8.5) THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(*) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.SEX = 'F'",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.TP",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1166",
+   "qid": 1166,
+   "question": "What are the symptoms observed by the youngest patient to ever did a medical examination? Identify their diagnosis.",
+   "evidence": "The larger the birthday value, the younger the person is, and vice versa; symptoms observed refers to the symptoms is not NULL",
+   "sql": "SELECT T2.Symptoms, T1.Diagnosis FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T2.Symptoms IS NOT NULL ORDER BY T1.Birthday DESC LIMIT 1",
+   "refs": [
+    "c:Examination.Diagnosis",
+    "c:Examination.ID",
+    "c:Examination.Symptoms",
+    "c:Patient.Birthday",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1281",
+   "qid": 1281,
+   "question": "Among the patients who have an abnormal level of glutamic oxaloacetic transaminase, when was the youngest of them born?",
+   "evidence": "abnormal level of glutamic oxaloacetic transaminase refers to GOT > = 60; The larger the birthday value, the younger the person is, and vice versa;",
+   "sql": "SELECT T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GOT >= 60 ORDER BY T1.Birthday DESC LIMIT 1",
+   "refs": [
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1262",
+   "qid": 1262,
+   "question": "How many patients with a normal level of complement 3 have a P pattern observed in the sheet of ANA examination?",
+   "evidence": "normal level of complement 3 refers to C3 > 35; have a P pattern observed in the sheet of ANA examination refers to ANA Pattern = 'P'; Should compute the number of distinct ones",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Examination AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.C3 > 35 AND T1.`ANA Pattern` = 'P'",
+   "refs": [
+    "c:Examination.ANA Pattern",
+    "c:Examination.ID",
+    "c:Laboratory.C3",
+    "c:Laboratory.ID"
+   ]
+  },
+  {
+   "id": "x:1206",
+   "qid": 1206,
+   "question": "When is the laboratory examination of patient '48473' where his/her AST glutamic oxaloacetic transaminase (GOT) index is above the normal range.",
+   "evidence": "AST glutamic oxaloacetic transaminase (GOT) index is above the normal range refers to GOT > = 60; when refers to DATE",
+   "sql": "SELECT Date FROM Laboratory WHERE ID = 48473 AND GOT >= 60",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID"
+   ]
+  },
+  {
+   "id": "x:1248",
+   "qid": 1248,
+   "question": "How many patients born after 1980/1/1 have an abnormal fibrinogen level?",
+   "evidence": "born after 1980/1/1 refers to Birthday > '1980-01-01'; normal fibrinogen level refers to FG between 150 and 450; Should return the number of distinct patients.",
+   "sql": "SELECT COUNT(DISTINCT T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.FG <= 150 OR T2.FG >= 450 AND T1.Birthday > '1980-01-01'",
+   "refs": [
+    "c:Laboratory.FG",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1171",
+   "qid": 1171,
+   "question": "How many underage patients were examined during the course of the three-year period from 1990 to 1993?",
+   "evidence": "underage patients refers to year(Birthday) < 18; three-year period from 1990 to 1993 refers to year(`Examination Date`) between '1990' and '1993'",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE STRFTIME('%Y', T2.`Examination Date`) BETWEEN '1990' AND '1993' AND STRFTIME('%Y', T2.`Examination Date`) - STRFTIME('%Y', T1.Birthday) < 18",
+   "refs": [
+    "c:Examination.Examination Date",
+    "c:Examination.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1256",
+   "qid": 1256,
+   "question": "How many patients with a abnormal C-reactive protein don't have their data recorded?",
+   "evidence": "abnormal C-reactive protein refers to CRP ='+'; don't have data recorded refers to Description IS NULL;",
+   "sql": "SELECT COUNT(T1.ID) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE (T2.CRP = '+' ) AND T1.Description IS NULL",
+   "refs": [
+    "c:Laboratory.CRP",
+    "c:Laboratory.ID",
+    "c:Patient.Description",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1153",
+   "qid": 1153,
+   "question": "What is the disease patient '30609' diagnosed with. List all the date of laboratory tests done for this patient.",
+   "evidence": "'30609' is the Patient ID; disease means Diagnosis",
+   "sql": "SELECT T1.Diagnosis, T2.Date FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.ID = 30609",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1253",
+   "qid": 1253,
+   "question": "For the patient who has the highest Ig A within the normal range, what is his or her diagnosis?",
+   "evidence": "highest Ig A within the normal range refers to MAX(IGA BETWEEN 80 AND 500);",
+   "sql": "SELECT patientData.Diagnosis FROM Patient AS patientData INNER JOIN Laboratory AS labData ON patientData.ID = labData.ID WHERE labData.IGA BETWEEN 80 AND 500 ORDER BY labData.IGA DESC LIMIT 1",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.IGA",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1158",
+   "qid": 1158,
+   "question": "List all patients who were born in 1937 whose total cholesterol was beyond the normal range.",
+   "evidence": "who were born in 1937 refers to year(birthday) = '1937'; total cholesterol was beyond the normal range refers to `T-CHO` > = '250'",
+   "sql": "SELECT DISTINCT T1.ID FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE STRFTIME('%Y', T1.Birthday) = '1937' AND T2.`T-CHO` >= 250",
+   "refs": [
+    "c:Laboratory.ID",
+    "c:Laboratory.T-CHO",
+    "c:Patient.Birthday",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1163",
+   "qid": 1163,
+   "question": "What was the age of the youngest patient when they initially arrived at the hospital?",
+   "evidence": "age refers to SUBTRACT(YEAR(`First Date`),YEAR(Birthday))",
+   "sql": "SELECT MIN(STRFTIME('%Y', `First Date`) - STRFTIME('%Y', Birthday)) FROM Patient",
+   "refs": [
+    "c:Patient.Birthday",
+    "c:Patient.First Date"
+   ]
+  },
+  {
+   "id": "x:1276",
+   "qid": 1276,
+   "question": "For the patients who have an abnormal level of anti-DNA, please list the diseases they are diagnosed with.",
+   "evidence": "abnormal level of anti-DNA refers to DNA > = 8; diseases refers to Diagnosis;",
+   "sql": "SELECT DISTINCT(T1.Diagnosis) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.DNA >= 8",
+   "refs": [
+    "c:Laboratory.DNA",
+    "c:Laboratory.ID",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1207",
+   "qid": 1207,
+   "question": "List all patients with their sex and date of birthday, whose AST glutamic oxaloacetic transaminase (GOT) index is within normal range for loboratory examination in 1994.",
+   "evidence": "AST glutamic oxaloacetic transaminase (GOT) index is within normal range refers to GOT < 60; examination in 1994 refers to year(Date) = 1994",
+   "sql": "SELECT DISTINCT T1.SEX, T1.Birthday FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GOT < 60 AND STRFTIME('%Y', T2.Date) = '1994'",
+   "refs": [
+    "c:Laboratory.Date",
+    "c:Laboratory.GOT",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1294",
+   "qid": 1294,
+   "question": "Please list the patient's ID whose creatinine level is normal and whose anti Cardiolipin antibody concentration level is the highest.",
+   "evidence": "creatinine level is normal refers to CRE < 1.5; anti Cardiolipin antibody concentration level is the highest refers to MAX(aCL IgA);",
+   "sql": "SELECT T2.ID FROM Laboratory AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T1.CRE < 1.5 ORDER BY T2.`aCL IgA` DESC LIMIT 1",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.aCL IgA",
+    "c:Laboratory.CRE",
+    "c:Laboratory.ID"
+   ]
+  },
+  {
+   "id": "x:1209",
+   "qid": 1209,
+   "question": "Please provide the diagnosis of patients with ALT glutamic pylvic transaminase beyond the normal range by ascending order of their date of birth.",
+   "evidence": "ALT glutamic pylvic transaminase beyond the normal range refers to GPT > 60; The larger the birthday value, the younger the person is, and vice versa; ",
+   "sql": "SELECT DISTINCT T1.Diagnosis FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GPT > 60 ORDER BY T1.Birthday ASC",
+   "refs": [
+    "c:Laboratory.GPT",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.Diagnosis",
+    "c:Patient.ID"
+   ]
+  },
+  {
+   "id": "x:1216",
+   "qid": 1216,
+   "question": "Sort in descending order all patients by birthday for male patient with albumin not within range.",
+   "evidence": "male = SEX = 'M'; albumin not within range refers to ALB < = 3.5 or ALB > = 5.5",
+   "sql": "SELECT DISTINCT T1.ID FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T1.SEX = 'M' AND (T2.ALB <= 3.5 OR T2.ALB >= 5.5) ORDER BY T1.Birthday DESC",
+   "refs": [
+    "c:Laboratory.ALB",
+    "c:Laboratory.ID",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  },
+  {
+   "id": "x:1301",
+   "qid": 1301,
+   "question": "Please list the IDs of the patients with no thrombosis and an abnormal level of creatinine phosphokinase.",
+   "evidence": "no thrombosis refers to Thrombosis = 0 ; abnormal level of creatinine phosphokinase refers to CPK < 250;",
+   "sql": "SELECT DISTINCT T1.ID FROM Laboratory AS T1 INNER JOIN Examination AS T2 ON T1.ID = T2.ID WHERE T2.Thrombosis = 0 AND T1.CPK < 250",
+   "refs": [
+    "c:Examination.ID",
+    "c:Examination.Thrombosis",
+    "c:Laboratory.CPK",
+    "c:Laboratory.ID"
+   ]
+  },
+  {
+   "id": "x:1232",
+   "qid": 1232,
+   "question": "Provide ID, sex and age of patient who has blood glucose (GLU) not within normal range but with total cholesterol(T-CHO) within normal range.",
+   "evidence": "age = SUBTRACT(year(current_timestamp), year(Birthday)); blood glucose (GLU) not within normal range refers to GLU > = 180; total cholesterol(T-CHO) within normal range refers to `T-CHO` < 250; ",
+   "sql": "SELECT DISTINCT T1.ID, T1.SEX , STRFTIME('%Y', CURRENT_TIMESTAMP) - STRFTIME('%Y', T1.Birthday) FROM Patient AS T1 INNER JOIN Laboratory AS T2 ON T1.ID = T2.ID WHERE T2.GLU >= 180 AND T2.`T-CHO` < 250",
+   "refs": [
+    "c:Laboratory.GLU",
+    "c:Laboratory.ID",
+    "c:Laboratory.T-CHO",
+    "c:Patient.Birthday",
+    "c:Patient.ID",
+    "c:Patient.SEX"
+   ]
+  }
+ ]
+}

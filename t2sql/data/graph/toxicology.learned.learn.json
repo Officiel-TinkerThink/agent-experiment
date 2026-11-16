@@ -1,0 +1,2341 @@
+{
+ "db": "toxicology",
+ "fold": "learn",
+ "concepts": [
+  {
+   "id": "k:0",
+   "text": "label = '-' means molecules are non-carcinogenic",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 11,
+   "sources": [
+    265,
+    280,
+    316,
+    264,
+    282,
+    283,
+    272,
+    327,
+    279,
+    222,
+    303
+   ]
+  },
+  {
+   "id": "k:1",
+   "text": "triple bond refers to bond_type = '#'",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 10,
+   "sources": [
+    306,
+    280,
+    260,
+    320,
+    272,
+    253,
+    267,
+    246,
+    330,
+    286
+   ]
+  },
+  {
+   "id": "k:2",
+   "text": "element = 'cl' means Chlorine",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:3",
+   "text": "element = 'c' means Carbon",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:4",
+   "text": "element = 'h' means Hydrogen",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:5",
+   "text": "element = 'o' means Oxygen, element = 's' means Sulfur",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:6",
+   "text": "element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:7",
+   "text": "element = 'i' means Iodine",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:8",
+   "text": "element = 'sn' means Tin",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:9",
+   "text": "element = 'pb' means Lead",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:10",
+   "text": "element = 'te' means Tellurium",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:11",
+   "text": "element = 'ca' means Calcium",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 8,
+   "sources": [
+    306,
+    290,
+    328,
+    285,
+    302,
+    307,
+    304,
+    319
+   ]
+  },
+  {
+   "id": "k:12",
+   "text": "non-carcinogenic molecules refers to label = '-'",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    196
+   ]
+  },
+  {
+   "id": "k:13",
+   "text": "chlorine atoms refers to element = 'cl'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    196
+   ]
+  },
+  {
+   "id": "k:14",
+   "text": "nitrogen refers to element = 'n'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    325
+   ]
+  },
+  {
+   "id": "k:15",
+   "text": "label = '+' mean molecules are carcinogenic",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 23,
+   "sources": [
+    325,
+    293,
+    295,
+    280,
+    218,
+    315,
+    273,
+    317,
+    264,
+    310,
+    261,
+    282,
+    283,
+    266,
+    330,
+    304,
+    251,
+    244,
+    298,
+    279,
+    312,
+    255,
+    303
+   ]
+  },
+  {
+   "id": "k:16",
+   "text": "hydrogen refers to element = h'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    295
+   ]
+  },
+  {
+   "id": "k:17",
+   "text": "sulphur refers to element - 's'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    326
+   ]
+  },
+  {
+   "id": "k:18",
+   "text": "double bond refers to bond_type = ' = '",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 12,
+   "sources": [
+    326,
+    335,
+    310,
+    320,
+    311,
+    275,
+    267,
+    246,
+    338,
+    244,
+    225,
+    303
+   ]
+  },
+  {
+   "id": "k:19",
+   "text": "TR000_1_2 is the bond id",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    277
+   ]
+  },
+  {
+   "id": "k:20",
+   "text": "carcinogenic molecules refers to label = '+'",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    198
+   ]
+  },
+  {
+   "id": "k:21",
+   "text": "single-bonded refers to bond_type = '-'",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 1,
+   "sources": [
+    198
+   ]
+  },
+  {
+   "id": "k:22",
+   "text": "average = DIVIDE(SUM(bond_type = '-'), COUNT(atom_id))",
+   "refs": [
+    "c:atom.atom_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id"
+   ],
+   "support": 1,
+   "sources": [
+    198
+   ]
+  },
+  {
+   "id": "k:23",
+   "text": "contain fluorine refers to element = 'f'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    218
+   ]
+  },
+  {
+   "id": "k:24",
+   "text": "percentage = DIVIDE(SUM(element = 'f') * 100, COUNT(molecule_id)) where label = '+'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    218
+   ]
+  },
+  {
+   "id": "k:25",
+   "text": "Should consider the distinct atoms when counting",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.bond_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 2,
+   "sources": [
+    218,
+    215
+   ]
+  },
+  {
+   "id": "k:26",
+   "text": "hydrogen refers to element = 'h'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 4,
+   "sources": [
+    228,
+    282,
+    330,
+    298
+   ]
+  },
+  {
+   "id": "k:27",
+   "text": "TR206 is the molecule id",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    228
+   ]
+  },
+  {
+   "id": "k:28",
+   "text": "percentage = DIVIDE(SUM(element = 'h'), COUNT(atom_id)) as percent where molecule_id = 'TR206'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:connected.atom_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    228
+   ]
+  },
+  {
+   "id": "k:29",
+   "text": "TR010 is the molecule id",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    231
+   ]
+  },
+  {
+   "id": "k:30",
+   "text": "majority of the bond found refers to MAX(COUNT(bond_type))",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 1,
+   "sources": [
+    231
+   ]
+  },
+  {
+   "id": "k:31",
+   "text": "carbon refers to element = 'c'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 6,
+   "sources": [
+    292,
+    201,
+    272,
+    338,
+    333,
+    271
+   ]
+  },
+  {
+   "id": "k:32",
+   "text": "between TR010 to TR050 refers to substr(molecule_id, 3, 3)>=10 AND substr(molecule_id, 3, 3) <= 50",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    292
+   ]
+  },
+  {
+   "id": "k:33",
+   "text": "chlorine refers to element = 'cl'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 3,
+   "sources": [
+    273,
+    308,
+    271
+   ]
+  },
+  {
+   "id": "k:34",
+   "text": "percentage = DIVIDE(SUM(element = 'pb')",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    273
+   ]
+  },
+  {
+   "id": "k:35",
+   "text": "COUNT(molecule_id)) as percentage where label = '+'",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    273
+   ]
+  },
+  {
+   "id": "k:36",
+   "text": "percentage = DIVIDE(SUM(label = '+' and element = 'cl'), COUNT(molecule_id)) as percentage",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    317
+   ]
+  },
+  {
+   "id": "k:37",
+   "text": "iodine refers to element = 'i'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    269
+   ]
+  },
+  {
+   "id": "k:38",
+   "text": "TR004 is the molecule id",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    240
+   ]
+  },
+  {
+   "id": "k:39",
+   "text": "TR001 is the molecule id",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    274
+   ]
+  },
+  {
+   "id": "k:40",
+   "text": "TR000, TR001 and TR002 are molecule id",
+   "refs": [
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    264
+   ]
+  },
+  {
+   "id": "k:41",
+   "text": "oxygen refers to element = 'o'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    335
+   ]
+  },
+  {
+   "id": "k:42",
+   "text": "single bond refers to bond_type = '-'",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 5,
+   "sources": [
+    332,
+    320,
+    267,
+    246,
+    255
+   ]
+  },
+  {
+   "id": "k:43",
+   "text": "molecules between TR004 to TR010 refers molecule_id BETWEEN 'TR004' and 'TR010'",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    332
+   ]
+  },
+  {
+   "id": "k:44",
+   "text": "phosphorus refers to element = 'p'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    260
+   ]
+  },
+  {
+   "id": "k:45",
+   "text": "bromine refers to element = 'br'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    260
+   ]
+  },
+  {
+   "id": "k:46",
+   "text": "type of bond refers to bond_type",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 2,
+   "sources": [
+    320,
+    213
+   ]
+  },
+  {
+   "id": "k:47",
+   "text": "bond_type ! = ' = '",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 1,
+   "sources": [
+    311
+   ]
+  },
+  {
+   "id": "k:48",
+   "text": "sulphur refers to element = 's'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    311
+   ]
+  },
+  {
+   "id": "k:49",
+   "text": "ratio = DIVIDE(SUM(element = 'h'), count(element)) where molecule_id = 'TR006'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    282
+   ]
+  },
+  {
+   "id": "k:50",
+   "text": "TR009 is the molecule id",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.molecule_id",
+    "c:connected.atom_id",
+    "c:connected.atom_id2",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    234
+   ]
+  },
+  {
+   "id": "k:51",
+   "text": "involved atom 12 refers to atom_id = 'TR009_12' or atom_id2 = 'TR009_12'",
+   "refs": [
+    "c:atom.atom_id"
+   ],
+   "support": 1,
+   "sources": [
+    234
+   ]
+  },
+  {
+   "id": "k:52",
+   "text": "calcium refers to element = 'ca'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    283
+   ]
+  },
+  {
+   "id": "k:53",
+   "text": "TR006 is the molecule id",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    233
+   ]
+  },
+  {
+   "id": "k:54",
+   "text": "double-bond molecules refers to bond_type = '='",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 1,
+   "sources": [
+    201
+   ]
+  },
+  {
+   "id": "k:55",
+   "text": "percentage = DIVIDE(SUM(element = 'c'), COUNT(atom_id))",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id"
+   ],
+   "support": 1,
+   "sources": [
+    201
+   ]
+  },
+  {
+   "id": "k:56",
+   "text": "with iodine element refer to element = 'i'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    215
+   ]
+  },
+  {
+   "id": "k:57",
+   "text": "with sulfur element refers to element = 's'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    215
+   ]
+  },
+  {
+   "id": "k:58",
+   "text": "single type bond refers to bond_type = '-'",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 2,
+   "sources": [
+    215,
+    232
+   ]
+  },
+  {
+   "id": "k:59",
+   "text": "single-bonded molecules refers to bond_type = '-'",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 1,
+   "sources": [
+    197
+   ]
+  },
+  {
+   "id": "k:60",
+   "text": "average number of oxygen atom = AVG(element = 'o')",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    197
+   ]
+  },
+  {
+   "id": "k:61",
+   "text": "atom that has the element lead refers to atom_id where element = 'pb'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    252
+   ]
+  },
+  {
+   "id": "k:62",
+   "text": "triple-bonded molecules refers to bond_type = '#'",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 1,
+   "sources": [
+    200
+   ]
+  },
+  {
+   "id": "k:63",
+   "text": "carcinogenic refers to label = '+'",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    200
+   ]
+  },
+  {
+   "id": "k:64",
+   "text": "atoms cannot bond with other atoms means atom_id NOT in connected table",
+   "refs": [
+    "c:connected.atom_id"
+   ],
+   "support": 1,
+   "sources": [
+    247
+   ]
+  },
+  {
+   "id": "k:65",
+   "text": "double bond refers to bond_type = '='",
+   "refs": [
+    "c:bond.bond_type"
+   ],
+   "support": 2,
+   "sources": [
+    328,
+    226
+   ]
+  },
+  {
+   "id": "k:66",
+   "text": "molecules consisted more than 5 atoms refers to COUNT(molecule_id) > 5",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    327
+   ]
+  },
+  {
+   "id": "k:67",
+   "text": "bond ID of atom 45 refers to SUBSTR(atom_id, 7, 2) + 0 = 45",
+   "refs": [
+    "c:atom.atom_id"
+   ],
+   "support": 1,
+   "sources": [
+    246
+   ]
+  },
+  {
+   "id": "k:68",
+   "text": "percentage = DIVIDE(SUM(label = '+'), COUNT(molecule_id)) * 100.0 where element = 'h' AND bond_type = '#'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    330
+   ]
+  },
+  {
+   "id": "k:69",
+   "text": "TR002 is the molecule id",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    337
+   ]
+  },
+  {
+   "id": "k:70",
+   "text": "TR004_8_9 bond atoms refers to bond_id = 'TR004_8_9'",
+   "refs": [
+    "c:bond.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    206
+   ]
+  },
+  {
+   "id": "k:71",
+   "text": "between the atoms TR004_8 and TR004_20 refers to atom_id = 'TR004_8' AND atom_id2 = 'TR004_20' OR another way around",
+   "refs": [
+    "c:atom.atom_id",
+    "c:connected.atom_id",
+    "c:connected.atom_id2"
+   ],
+   "support": 1,
+   "sources": [
+    213
+   ]
+  },
+  {
+   "id": "k:72",
+   "text": "atoms refer to atom_id or atom_id2",
+   "refs": [
+    "c:atom.atom_id",
+    "c:connected.atom_id",
+    "c:connected.atom_id2"
+   ],
+   "support": 1,
+   "sources": [
+    236
+   ]
+  },
+  {
+   "id": "k:73",
+   "text": "TR144_8_19 is the bond id",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    249
+   ]
+  },
+  {
+   "id": "k:74",
+   "text": "TR001_10_11 is the bond id",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 2,
+   "sources": [
+    268,
+    285
+   ]
+  },
+  {
+   "id": "k:75",
+   "text": "molecule id refers to SUBSTR(bond_id, 1, 5)",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    285
+   ]
+  },
+  {
+   "id": "k:76",
+   "text": "atom 1 refers to SUBSTR(bond_id, 7, 2)",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    285
+   ]
+  },
+  {
+   "id": "k:77",
+   "text": "atom 2 refers to SUBSTR(bond_id, 10, 2)",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    285
+   ]
+  },
+  {
+   "id": "k:78",
+   "text": "consisting of element carbon and hydrogen refers to element in('c', 'h')",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    256
+   ]
+  },
+  {
+   "id": "k:79",
+   "text": "TR186 is a molecule id",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    300
+   ]
+  },
+  {
+   "id": "k:80",
+   "text": "label = '-' means molecules are not carcinogenic",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    232
+   ]
+  },
+  {
+   "id": "k:81",
+   "text": "list top three molecules refers to return molecule_id and order by molecule_id",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    232
+   ]
+  },
+  {
+   "id": "k:82",
+   "text": "percentage = DIVIDE(SUM(label = '+' and element = 'h'), COUNT(molecule_id)) * 100.0",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    298
+   ]
+  },
+  {
+   "id": "k:83",
+   "text": "connections refers to bond_id",
+   "refs": [
+    "c:bond.bond_id",
+    "c:connected.bond_id"
+   ],
+   "support": 1,
+   "sources": [
+    239
+   ]
+  },
+  {
+   "id": "k:84",
+   "text": "atom 19 refers to atom_id like 'TR%_19'",
+   "refs": [
+    "c:atom.atom_id"
+   ],
+   "support": 1,
+   "sources": [
+    239
+   ]
+  },
+  {
+   "id": "k:85",
+   "text": "have phosphorus as atom elements refers to element = 'p'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    243
+   ]
+  },
+  {
+   "id": "k:86",
+   "text": "have nitrogen as atom elements refers to element = 'n'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    243
+   ]
+  },
+  {
+   "id": "k:87",
+   "text": "label = '+' means molecules are carcinogenic",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    222
+   ]
+  },
+  {
+   "id": "k:88",
+   "text": "difference = SUBTRACT(SUM(label = '+'), SUM(label = '-'))",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    222
+   ]
+  },
+  {
+   "id": "k:89",
+   "text": "TR008 is the molecule id",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    226
+   ]
+  },
+  {
+   "id": "k:90",
+   "text": "percentage = DIVIDE(SUM(bond_type = '='), COUNT(bond_id)) as percent where molecule_id = 'TR008'",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:connected.bond_id",
+    "c:molecule.molecule_id"
+   ],
+   "support": 1,
+   "sources": [
+    226
+   ]
+  },
+  {
+   "id": "k:91",
+   "text": "proportion = DIVIDE(SUM(label = '+') * 100, COUNT(bond_id)) where bond_type = '-'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.bond_id",
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    255
+   ]
+  },
+  {
+   "id": "k:92",
+   "text": "with hydrogen refers to element = 'h'",
+   "refs": [
+    "c:atom.element"
+   ],
+   "support": 1,
+   "sources": [
+    208
+   ]
+  },
+  {
+   "id": "k:93",
+   "text": "label most numerous in atoms refers to MAX(COUNT(label))",
+   "refs": [
+    "c:molecule.label"
+   ],
+   "support": 1,
+   "sources": [
+    208
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "id": "x:265",
+   "qid": 265,
+   "question": "List down the molecule id for non carcinogenic molecules.",
+   "evidence": "label = '-' means molecules are non-carcinogenic",
+   "sql": "SELECT T.molecule_id FROM molecule AS T WHERE T.label = '-'",
+   "refs": [
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:306",
+   "qid": 306,
+   "question": "Which molecules have triple bonds and list all the elements they contain.",
+   "evidence": "triple bond refers to bond_type = '#'; element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT DISTINCT T1.molecule_id, T2.element FROM bond AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '#'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:196",
+   "qid": 196,
+   "question": "In the non-carcinogenic molecules, how many contain chlorine atoms?",
+   "evidence": "non-carcinogenic molecules refers to label = '-'; chlorine atoms refers to element = 'cl'",
+   "sql": "SELECT COUNT(DISTINCT T1.molecule_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.element = 'cl' AND T1.label = '-'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:325",
+   "qid": 325,
+   "question": "How many carcinogenic molecules that consisted of Nitrogen?",
+   "evidence": "nitrogen refers to element = 'n'; label = '+' mean molecules are carcinogenic;",
+   "sql": "SELECT COUNT(DISTINCT T1.molecule_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.element = 'n' AND T1.label = '+'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:293",
+   "qid": 293,
+   "question": "How many atoms belong to the molecule labeled with carcinogenic compounds?",
+   "evidence": "label = '+' mean molecules are carcinogenic;",
+   "sql": "SELECT COUNT(T1.atom_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:295",
+   "qid": 295,
+   "question": "How many atoms belong to the molecule that element is hydrogen and labeled with carcinogenic compound?",
+   "evidence": "label = '+' mean molecules are carcinogenic; hydrogen refers to element = h'",
+   "sql": "SELECT COUNT(T1.atom_id) AS atomnums_h FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+' AND T1.element = 'h'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:280",
+   "qid": 280,
+   "question": "Enumerate the bond ID of triple bond type molecules and tell me if they are carcinogenic or not.",
+   "evidence": "triple bond refers to bond_type = '#'; label = '+' mean molecules are carcinogenic; label = '-' means molecules are non-carcinogenic",
+   "sql": "SELECT DISTINCT T1.bond_id, T2.label FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '#'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:326",
+   "qid": 326,
+   "question": "Which molecule consisted of Sulphur atom with double bond?",
+   "evidence": "sulphur refers to element - 's'; double bond refers to bond_type = ' = ';",
+   "sql": "SELECT DISTINCT T1.molecule_id FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 's' AND T2.bond_type = '='",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:277",
+   "qid": 277,
+   "question": "What are the toxicology elements associated with bond ID TR000_1_2?",
+   "evidence": "TR000_1_2 is the bond id;",
+   "sql": "SELECT T1.element FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T2.bond_id = 'TR000_1_2'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:198",
+   "qid": 198,
+   "question": "On average how many carcinogenic molecules are single bonded?",
+   "evidence": "carcinogenic molecules refers to label = '+'; single-bonded refers to bond_type = '-'; average = DIVIDE(SUM(bond_type = '-'), COUNT(atom_id))",
+   "sql": "SELECT AVG(single_bond_count) FROM (SELECT T3.molecule_id, COUNT(T1.bond_type) AS single_bond_count FROM bond AS T1  INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN molecule AS T3 ON T3.molecule_id = T2.molecule_id WHERE T1.bond_type = '-' AND T3.label = '+' GROUP BY T3.molecule_id) AS subquery",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:218",
+   "qid": 218,
+   "question": "What percentage of carcinogenic-type molecules does not contain fluorine?",
+   "evidence": "label = '+' mean molecules are carcinogenic; contain fluorine refers to element = 'f'; percentage = DIVIDE(SUM(element = 'f') * 100, COUNT(molecule_id)) where label = '+'; Should consider the distinct atoms when counting;",
+   "sql": "SELECT CAST(COUNT(DISTINCT CASE WHEN T1.element <> 'f' THEN T2.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(DISTINCT T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:315",
+   "qid": 315,
+   "question": "Among the molecules which contain \"cl\" element, which of them are carcinogenic?",
+   "evidence": "label = '+' mean molecules are carcinogenic;",
+   "sql": "SELECT DISTINCT T1.molecule_id FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 'cl' AND T2.label = '+'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:316",
+   "qid": 316,
+   "question": "Among the molecules which contain \"c\" element, which of them are not carcinogenic?",
+   "evidence": "label = '-' means molecules are non-carcinogenic",
+   "sql": "SELECT DISTINCT T1.molecule_id FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 'c' AND T2.label = '-'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:228",
+   "qid": 228,
+   "question": "How much of the hydrogen in molecule TR206 is accounted for? Please provide your answer as a percentage with four decimal places.",
+   "evidence": "hydrogen refers to element = 'h'; TR206 is the molecule id; percentage = DIVIDE(SUM(element = 'h'), COUNT(atom_id)) as percent where molecule_id = 'TR206'",
+   "sql": "SELECT ROUND(CAST(COUNT(CASE WHEN T.element = 'h' THEN T.atom_id ELSE NULL END) AS REAL) * 100 / COUNT(T.atom_id),4) FROM atom AS T WHERE T.molecule_id = 'TR206'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:231",
+   "qid": 231,
+   "question": "Which bond type accounted for the majority of the bonds found in molecule TR010 and state whether or not this molecule is carcinogenic?",
+   "evidence": "TR010 is the molecule id; majority of the bond found refers to MAX(COUNT(bond_type)); ",
+   "sql": "SELECT T.bond_type FROM ( SELECT T1.bond_type, COUNT(T1.molecule_id) FROM bond AS T1  WHERE T1.molecule_id = 'TR010' GROUP BY T1.bond_type ORDER BY COUNT(T1.molecule_id) DESC LIMIT 1 ) AS T",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:292",
+   "qid": 292,
+   "question": "Identify the atoms belong to the molecule with ID between TR010 to TR050 that contain the element carbon.",
+   "evidence": "carbon refers to element = 'c'; between TR010 to TR050 refers to substr(molecule_id, 3, 3)>=10 AND substr(molecule_id, 3, 3) <= 50",
+   "sql": "SELECT T.atom_id FROM atom AS T WHERE T.molecule_id BETWEEN 'TR010' AND 'TR050' AND T.element = 'c'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:273",
+   "qid": 273,
+   "question": "What is the percentage of element chlorine in carcinogenic molecules?",
+   "evidence": "chlorine refers to element = 'cl'; label = '+' mean molecules are carcinogenic; percentage = DIVIDE(SUM(element = 'pb'); COUNT(molecule_id)) as percentage where label = '+'",
+   "sql": "SELECT CAST(COUNT( CASE WHEN T1.element = 'cl' THEN T1.element ELSE NULL END) AS REAL) * 100 / COUNT(T1.element) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:317",
+   "qid": 317,
+   "question": "Calculate the percentage of carcinogenic molecules which contain the Chlorine element.",
+   "evidence": "label = '+' mean molecules are carcinogenic; percentage = DIVIDE(SUM(label = '+' and element = 'cl'), COUNT(molecule_id)) as percentage",
+   "sql": "SELECT COUNT(CASE WHEN T2.label = '+' AND T1.element = 'cl' THEN T2.molecule_id ELSE NULL END) * 100 / COUNT(T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:269",
+   "qid": 269,
+   "question": "How many bond id have element iodine?",
+   "evidence": "iodine refers to element = 'i'",
+   "sql": "SELECT COUNT(T3.bond_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T1.element = 'i'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_id",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:240",
+   "qid": 240,
+   "question": "List all the elements of the toxicology of the molecule \"TR004\".",
+   "evidence": "TR004 is the molecule id;",
+   "sql": "SELECT DISTINCT T.element FROM atom AS T WHERE T.molecule_id = 'TR004'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:274",
+   "qid": 274,
+   "question": "List the toxicology elements associated with molecule TR001.",
+   "evidence": "TR001 is the molecule id",
+   "sql": "SELECT DISTINCT T.element FROM atom AS T WHERE T.molecule_id = 'TR001'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:290",
+   "qid": 290,
+   "question": "Which toxic element can be found in the molecule TR151?",
+   "evidence": "element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT DISTINCT T.element FROM atom AS T WHERE T.molecule_id = 'TR151'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:264",
+   "qid": 264,
+   "question": "What are the labels for TR000, TR001 and TR002?",
+   "evidence": "TR000, TR001 and TR002 are molecule id; label = '+' mean molecules are carcinogenic; label = '-' means molecules are non-carcinogenic",
+   "sql": "SELECT molecule_id, T.label FROM molecule AS T WHERE T.molecule_id IN ('TR000', 'TR001', 'TR002')",
+   "refs": [
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:335",
+   "qid": 335,
+   "question": "What is the total number of molecules with double bonded oxygen?",
+   "evidence": "oxygen refers to element = 'o'; double bond refers to bond_type = ' = ';",
+   "sql": "SELECT COUNT(DISTINCT T1.molecule_id) FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.bond_type = '=' AND T1.element = 'o'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:332",
+   "qid": 332,
+   "question": "Among the molecules between TR004 to TR010, how many of them has single bonds?",
+   "evidence": "single bond refers to bond_type = '-'; molecules between TR004 to TR010 refers molecule_id BETWEEN 'TR004' and 'TR010';",
+   "sql": "SELECT COUNT(DISTINCT T.molecule_id) FROM bond AS T WHERE T.molecule_id BETWEEN 'TR004' AND 'TR010' AND T.bond_type = '-'",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:308",
+   "qid": 308,
+   "question": "How many bonds are created by bonding atoms with chlorine element?",
+   "evidence": "chlorine refers to element = 'cl'",
+   "sql": "SELECT COUNT(T1.bond_id) FROM connected AS T1 INNER JOIN atom AS T2 ON T1.atom_id = T2.atom_id WHERE T2.element = 'cl'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:310",
+   "qid": 310,
+   "question": "How many molecules have a double bond type and among these molecule, how many are labeled as carcinogenic compound?",
+   "evidence": "double bond refers to bond_type = ' = '; label = '+' mean molecules are carcinogenic;",
+   "sql": "SELECT COUNT(DISTINCT T2.molecule_id), SUM(CASE WHEN T2.label = '+' THEN 1 ELSE 0 END) FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '='",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:260",
+   "qid": 260,
+   "question": "Calculate the total atoms with triple-bond molecules containing the element phosphorus or bromine.",
+   "evidence": "triple bond refers to bond_type = '#'; phosphorus refers to element = 'p'; bromine refers to element = 'br'",
+   "sql": "SELECT COUNT(T1.atom_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T3.bond_type = '#' AND T1.element IN ('p', 'br')",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:320",
+   "qid": 320,
+   "question": "What is the type of the bond which is presenting the connection between two atoms TR000_1 and TR000_2?",
+   "evidence": "type of bond refers to bond_type; double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+   "sql": "SELECT T1.bond_type FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T2.atom_id = 'TR000_1' AND T2.atom_id2 = 'TR000_2'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.atom_id2",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:311",
+   "qid": 311,
+   "question": "How many molecules without sulphur element is not having double bond?",
+   "evidence": "double bond refers to bond_type = ' = '; bond_type ! = ' = '; sulphur refers to element = 's'",
+   "sql": "SELECT COUNT(DISTINCT T1.molecule_id) FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element <> 's' AND T2.bond_type <> '='",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:261",
+   "qid": 261,
+   "question": "Write down bond id for molecules that are carcinogenic.",
+   "evidence": "label = '+' mean molecules are carcinogenic",
+   "sql": "SELECT DISTINCT T1.bond_id FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:282",
+   "qid": 282,
+   "question": "What is the ratio of Hydrogen elements in molecule ID TR006? List the ratio with its label.",
+   "evidence": "hydrogen refers to element = 'h'; ratio = DIVIDE(SUM(element = 'h'), count(element)) where molecule_id = 'TR006' ; label = '+' mean molecules are carcinogenic; label = '-' means molecules are non-carcinogenic",
+   "sql": "WITH SubQuery AS (SELECT DISTINCT T1.atom_id, T1.element, T1.molecule_id, T2.label FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.molecule_id = 'TR006') SELECT CAST(COUNT(CASE WHEN element = 'h' THEN atom_id ELSE NULL END) AS REAL) / (CASE WHEN COUNT(atom_id) = 0 THEN NULL ELSE COUNT(atom_id) END) AS ratio, label FROM SubQuery GROUP BY label",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:234",
+   "qid": 234,
+   "question": "How many bonds which involved atom 12 does molecule TR009 have?",
+   "evidence": "TR009 is the molecule id;  involved atom 12 refers to atom_id = 'TR009_12' or atom_id2 = 'TR009_12'",
+   "sql": "SELECT COUNT(T2.bond_id) FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T1.molecule_id = 'TR009' AND T2.atom_id = T1.molecule_id || '_1' AND T2.atom_id2 = T1.molecule_id || '_2'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.molecule_id",
+    "c:connected.atom_id",
+    "c:connected.atom_id2",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:283",
+   "qid": 283,
+   "question": "Identify whether the chemical compound that contains Calcium is carcinogenic.",
+   "evidence": "calcium refers to element = 'ca'; label = '+' mean molecules are carcinogenic; label = '-' means molecules are non-carcinogenic;",
+   "sql": "SELECT T2.label AS flag_carcinogenic FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 'ca'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:233",
+   "qid": 233,
+   "question": "Please list top two bonds that happened with the molecule TR006 in alphabetical order.",
+   "evidence": "TR006 is the molecule id",
+   "sql": "SELECT DISTINCT T2.bond_id FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T1.molecule_id = 'TR006' ORDER BY T2.bond_id LIMIT 2",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:201",
+   "qid": 201,
+   "question": "What is the percentage of carbon in double-bond molecules?",
+   "evidence": "carbon refers to element = 'c'; double-bond molecules refers to bond_type = '='; percentage = DIVIDE(SUM(element = 'c'), COUNT(atom_id))",
+   "sql": "SELECT CAST(COUNT(DISTINCT CASE WHEN T1.element = 'c' THEN T1.atom_id ELSE NULL END) AS REAL) * 100 / COUNT(DISTINCT T1.atom_id) FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.bond_type = '='",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:215",
+   "qid": 215,
+   "question": "How many atoms with iodine and with sulfur type elements are there in single bond molecules?",
+   "evidence": "with iodine element refer to element = 'i'; with sulfur element refers to element = 's'; single type bond refers to bond_type = '-'; Should consider the distinct atoms when counting;",
+   "sql": "SELECT COUNT(DISTINCT CASE WHEN T1.element = 'i' THEN T1.atom_id ELSE NULL END) AS iodine_nums , COUNT(DISTINCT CASE WHEN T1.element = 's' THEN T1.atom_id ELSE NULL END) AS sulfur_nums FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id INNER JOIN bond AS T3 ON T2.bond_id = T3.bond_id WHERE T3.bond_type = '-'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:197",
+   "qid": 197,
+   "question": "Calculate the average number of oxygen atoms in single-bonded molecules.",
+   "evidence": "single-bonded molecules refers to bond_type = '-' ; average number of oxygen atom = AVG(element = 'o')",
+   "sql": "SELECT AVG(oxygen_count) FROM (SELECT T1.molecule_id, COUNT(T1.element) AS oxygen_count FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id  WHERE T2.bond_type = '-' AND T1.element = 'o'  GROUP BY T1.molecule_id) AS oxygen_counts",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:266",
+   "qid": 266,
+   "question": "Calculate the total carcinogenic molecules for molecule id from TR000 to TR030.",
+   "evidence": "label = '+' mean molecules are carcinogenic",
+   "sql": "SELECT COUNT(T.molecule_id) FROM molecule AS T WHERE T.molecule_id BETWEEN 'TR000' AND 'TR030' AND T.label = '+'",
+   "refs": [
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:272",
+   "qid": 272,
+   "question": "List down two molecule id of triple bond non carcinogenic molecules with element carbon.",
+   "evidence": "carbon refers to element = 'c'; triple bond refers to bond_type = '#'; label = '-' means molecules are non-carcinogenic",
+   "sql": "SELECT DISTINCT T2.molecule_id FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T3.bond_type = '#' AND T1.element = 'c' AND T2.label = '-'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:252",
+   "qid": 252,
+   "question": "What are the atoms that can bond with the atom that has the element lead?",
+   "evidence": "atom that has the element lead refers to atom_id where element = 'pb'",
+   "sql": "SELECT T2.atom_id, T2.atom_id2 FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T1.element = 'pb'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.atom_id2"
+   ]
+  },
+  {
+   "id": "x:200",
+   "qid": 200,
+   "question": "Find the triple-bonded molecules which are carcinogenic.",
+   "evidence": "triple-bonded molecules refers to bond_type = '#'; carcinogenic refers to label = '+'",
+   "sql": "SELECT DISTINCT T2.molecule_id FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '#' AND T2.label = '+'",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:275",
+   "qid": 275,
+   "question": "Give me the molecule ID of the double bond type.",
+   "evidence": "double bond refers to bond_type = ' = ';",
+   "sql": "SELECT DISTINCT T.molecule_id FROM bond AS T WHERE T.bond_type = '='",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:247",
+   "qid": 247,
+   "question": "List all the elements of atoms that can not bond with any other atoms.",
+   "evidence": " atoms cannot bond with other atoms means atom_id NOT in connected table;",
+   "sql": "SELECT DISTINCT T.element FROM atom AS T WHERE T.element NOT IN ( SELECT DISTINCT T1.element FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id )",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id"
+   ]
+  },
+  {
+   "id": "x:253",
+   "qid": 253,
+   "question": "List the elements of all the triple bonds.",
+   "evidence": "triple bond refers to bond_type = '#';",
+   "sql": "SELECT DISTINCT T3.element FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id INNER JOIN atom AS T3 ON T2.atom_id = T3.atom_id WHERE T1.bond_type = '#'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:267",
+   "qid": 267,
+   "question": "List down the bond type for molecules from molecule id TR000 to TR050.",
+   "evidence": "double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+   "sql": "SELECT T2.molecule_id, T2.bond_type FROM molecule AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.molecule_id BETWEEN 'TR000' AND 'TR050'",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:328",
+   "qid": 328,
+   "question": "List all the elements with double bond, consisted in molecule TR024.",
+   "evidence": "double bond refers to bond_type = '='; element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT T1.element FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.molecule_id = 'TR024' AND T2.bond_type = '='",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:327",
+   "qid": 327,
+   "question": "Which non-carcinogenic molecules consisted more than 5 atoms?",
+   "evidence": "label = '-' means molecules are non-carcinogenic; molecules consisted more than 5 atoms refers to COUNT(molecule_id) > 5",
+   "sql": "SELECT T.molecule_id FROM ( SELECT T1.molecule_id, COUNT(T2.atom_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.label = '-' GROUP BY T1.molecule_id HAVING COUNT(T2.atom_id) > 5 ) t",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:246",
+   "qid": 246,
+   "question": "List the bond type and the bond ID of the atom 45.",
+   "evidence": "bond ID of atom 45 refers to SUBSTR(atom_id, 7, 2) + 0 = 45; double bond refers to bond_type = ' = '; single bond refers to bond_type = '-'; triple bond refers to bond_type = '#';",
+   "sql": "SELECT T1.bond_type, T1.bond_id FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE SUBSTR(T2.atom_id, 7, 2) = '45'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:330",
+   "qid": 330,
+   "question": "Calculate the percentage of carcinogenic molecules with triple bonded Hidrogen atoms.",
+   "evidence": "hydrogen refers to element = 'h'; label = '+' mean molecules are carcinogenic; triple bond refers to bond_type = '#'; percentage = DIVIDE(SUM(label = '+'), COUNT(molecule_id)) * 100.0 where element = 'h' AND bond_type = '#';",
+   "sql": "SELECT CAST(SUM(CASE WHEN T1.label = '+' THEN 1 ELSE 0 END) AS REAL) * 100 / COUNT(DISTINCT T1.molecule_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T1.molecule_id = T3.molecule_id WHERE T3.bond_type = '#' AND T2.element = 'h'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:337",
+   "qid": 337,
+   "question": "List the element and bond type included in the molecule with molecule ID of TR002.",
+   "evidence": "TR002 is the molecule id",
+   "sql": "SELECT DISTINCT T1.element, T2.bond_type FROM atom AS T1 INNER JOIN bond AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.molecule_id = 'TR002'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:206",
+   "qid": 206,
+   "question": "What elements are in the TR004_8_9 bond atoms?",
+   "evidence": "TR004_8_9 bond atoms refers to bond_id = 'TR004_8_9';",
+   "sql": "SELECT DISTINCT T1.element FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T2.bond_id = 'TR004_8_9'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:213",
+   "qid": 213,
+   "question": "What type of bond is there between the atoms TR004_8 and TR004_20?",
+   "evidence": "type of bond refers to bond_type; between the atoms TR004_8 and TR004_20 refers to atom_id = 'TR004_8' AND atom_id2 = 'TR004_20' OR another way around",
+   "sql": "SELECT T1.bond_type FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T2.atom_id = 'TR004_8' AND T2.atom_id2 = 'TR004_20' OR T2.atom_id2 = 'TR004_8' AND T2.atom_id = 'TR004_20'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.atom_id2",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:236",
+   "qid": 236,
+   "question": "What are the bond type and the atoms of the bond ID of TR001_6_9?",
+   "evidence": "atoms refer to atom_id or atom_id2",
+   "sql": "SELECT T1.bond_type, T2.atom_id, T2.atom_id2 FROM bond AS T1 INNER JOIN connected AS T2 ON T1.bond_id = T2.bond_id WHERE T2.bond_id = 'TR001_6_9'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:connected.atom_id",
+    "c:connected.atom_id2",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:249",
+   "qid": 249,
+   "question": "What are the elements of the atoms of TR144_8_19?",
+   "evidence": "TR144_8_19 is the bond id; ",
+   "sql": "SELECT T2.element FROM connected AS T1 INNER JOIN atom AS T2 ON T1.atom_id = T2.atom_id WHERE T1.bond_id = 'TR144_8_19'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:268",
+   "qid": 268,
+   "question": "What are the elements for bond id TR001_10_11?",
+   "evidence": "TR001_10_11 is the bond id;",
+   "sql": "SELECT T2.element FROM connected AS T1 INNER JOIN atom AS T2 ON T1.atom_id = T2.atom_id WHERE T1.bond_id = 'TR001_10_11'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:285",
+   "qid": 285,
+   "question": "Name chemical elements that form a bond TR001_10_11.",
+   "evidence": "element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium; TR001_10_11 is the bond id; molecule id refers to SUBSTR(bond_id, 1, 5); atom 1 refers to SUBSTR(bond_id, 7, 2); atom 2 refers to SUBSTR(bond_id, 10, 2)",
+   "sql": "SELECT T1.element FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id INNER JOIN bond AS T3 ON T2.bond_id = T3.bond_id WHERE T3.bond_id = 'TR001_10_11'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:bond.bond_id",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:302",
+   "qid": 302,
+   "question": "Name the elements that comprise the atoms of bond TR001_2_4.",
+   "evidence": "element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT DISTINCT T1.element FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T2.bond_id = 'TR001_2_4'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:307",
+   "qid": 307,
+   "question": "Name the atoms' elements that form bond TR000_2_3.",
+   "evidence": "element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT T2.element FROM connected AS T1 INNER JOIN atom AS T2 ON T1.atom_id = T2.atom_id WHERE T1.bond_id = 'TR000_2_3'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:304",
+   "qid": 304,
+   "question": "List all carcinogenic molecules and their elements.",
+   "evidence": "label = '+' mean molecules are carcinogenic; element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT DISTINCT T2.molecule_id, T1.element FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T2.label = '+'",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:313",
+   "qid": 313,
+   "question": "How many atoms belong to molecule id TR001?",
+   "evidence": "",
+   "sql": "SELECT COUNT(T.atom_id) FROM atom AS T WHERE T.molecule_id = 'TR001'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:319",
+   "qid": 319,
+   "question": "How many elements are contained in bond_id TR001_3_4?",
+   "evidence": "element = 'cl' means Chlorine; element = 'c' means Carbon; element = 'h' means Hydrogen; element = 'o' means Oxygen, element = 's' means Sulfur; element = 'n' means Nitrogen, element = 'p' means Phosphorus, element = 'na' means Sodium, element = 'br' means Bromine, element = 'f' means Fluorine; element = 'i' means Iodine; element = 'sn' means Tin; element = 'pb' means Lead; element = 'te' means Tellurium; element = 'ca' means Calcium",
+   "sql": "SELECT COUNT(DISTINCT T1.element) FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T2.bond_id = 'TR001_3_4'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:338",
+   "qid": 338,
+   "question": "What is the atom ID of double bonded carbon in TR012 molecule?",
+   "evidence": "carbon refers to element = 'c'; double bond refers to bond_type = ' = ';",
+   "sql": "SELECT T1.atom_id FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T2.molecule_id = 'TR012' AND T3.bond_type = '=' AND T1.element = 'c'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:256",
+   "qid": 256,
+   "question": "Calculate the total atoms consisting of the element carbon and hydrogen.",
+   "evidence": "consisting of element carbon and hydrogen refers to element in('c', 'h')",
+   "sql": "SELECT COUNT(T.atom_id) FROM atom AS T WHERE T.element = 'c' OR T.element = 'h'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element"
+   ]
+  },
+  {
+   "id": "x:333",
+   "qid": 333,
+   "question": "In the molecule TR008, how many carbons are present?",
+   "evidence": "carbon refers to element = 'c'",
+   "sql": "SELECT COUNT(T.atom_id) FROM atom AS T WHERE T.molecule_id = 'TR008' AND T.element = 'c'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:251",
+   "qid": 251,
+   "question": "What is the least common element of all carcinogenic molecules?",
+   "evidence": "label = '+' mean molecules are carcinogenic",
+   "sql": "SELECT T.element FROM ( SELECT T2.element, COUNT(DISTINCT T2.molecule_id) FROM molecule AS T1 INNER JOIN atom AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.label = '+' GROUP BY T2.element ORDER BY COUNT(DISTINCT T2.molecule_id) LIMIT 1 ) t",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:300",
+   "qid": 300,
+   "question": "What atoms comprise TR186?",
+   "evidence": "TR186 is a molecule id",
+   "sql": "SELECT T.atom_id FROM atom AS T WHERE T.molecule_id = 'TR186'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.molecule_id"
+   ]
+  },
+  {
+   "id": "x:244",
+   "qid": 244,
+   "question": "Is the molecule with the most double bonds carcinogenic?",
+   "evidence": "double bond refers to bond_type = ' = '; label = '+' mean molecules are carcinogenic",
+   "sql": "SELECT T1.label FROM molecule AS T1 INNER JOIN ( SELECT T.molecule_id, COUNT(T.bond_type) FROM bond AS T WHERE T.bond_type = '=' GROUP BY T.molecule_id ORDER BY COUNT(T.bond_type) DESC LIMIT 1 ) AS T2 ON T1.molecule_id = T2.molecule_id",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:232",
+   "qid": 232,
+   "question": "Please list top three molecules that have single bonds between two atoms and are not carcinogenic in alphabetical order.",
+   "evidence": "label = '-' means molecules are not carcinogenic; single type bond refers to bond_type = '-'; list top three molecules refers to return molecule_id and order by molecule_id;",
+   "sql": "SELECT DISTINCT T2.molecule_id FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '-' AND T2.label = '-' ORDER BY T2.molecule_id LIMIT 3",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:298",
+   "qid": 298,
+   "question": "Calculate the percentage of molecules containing carcinogenic compounds that element is hydrogen.",
+   "evidence": "hydrogen refers to element = 'h'; label = '+' mean molecules are carcinogenic; percentage = DIVIDE(SUM(label = '+' and element = 'h'), COUNT(molecule_id)) * 100.0",
+   "sql": "SELECT CAST(COUNT(CASE WHEN T1.element = 'h' AND T2.label = '+' THEN T2.molecule_id ELSE NULL END) AS REAL) * 100 / COUNT(T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:279",
+   "qid": 279,
+   "question": "What is the label for bond ID TR001_10_11?",
+   "evidence": "label = '+' mean molecules are carcinogenic; label = '-' means molecules are non-carcinogenic",
+   "sql": "SELECT T2.label FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_id = 'TR001_10_11'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:312",
+   "qid": 312,
+   "question": "What is the carcinogenic label for bond TR001_2_4?",
+   "evidence": "label = '+' mean molecules are carcinogenic",
+   "sql": "SELECT DISTINCT T2.label FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id INNER JOIN bond AS T3 ON T2.molecule_id = T3.molecule_id WHERE T3.bond_id = 'TR001_2_4'",
+   "refs": [
+    "c:atom.molecule_id",
+    "c:bond.bond_id",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:239",
+   "qid": 239,
+   "question": "How many connections does the atom 19 have?",
+   "evidence": "connections refers to bond_id; atom 19 refers to atom_id like 'TR%_19';",
+   "sql": "SELECT COUNT(T.bond_id) FROM connected AS T WHERE SUBSTR(T.atom_id, -2) = '19'",
+   "refs": [
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:243",
+   "qid": 243,
+   "question": "What are the bonds that have phosphorus and nitrogen as their atom elements?",
+   "evidence": "have phosphorus as atom elements refers to element = 'p'; have nitrogen as atom elements refers to element = 'n'",
+   "sql": "SELECT T2.bond_id FROM atom AS T1 INNER JOIN connected AS T2 ON T1.atom_id = T2.atom_id WHERE T2.bond_id IN ( SELECT T3.bond_id FROM connected AS T3 INNER JOIN atom AS T4 ON T3.atom_id = T4.atom_id WHERE T4.element = 'p' ) AND T1.element = 'n'",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:271",
+   "qid": 271,
+   "question": "Does bond id TR001_1_8 have both element of chlorine and carbon?",
+   "evidence": "chlorine refers to element = 'cl'; carbon refers to element = 'c'",
+   "sql": "SELECT T2.bond_id, T2.atom_id2, T1.element AS flag_have_CaCl FROM atom AS T1 INNER JOIN connected AS T2 ON T2.atom_id = T1.atom_id WHERE T2.bond_id = 'TR001_1_8' AND (T1.element = 'c1' OR T1.element = 'c')",
+   "refs": [
+    "c:atom.atom_id",
+    "c:atom.element",
+    "c:connected.atom_id",
+    "c:connected.atom_id2",
+    "c:connected.bond_id"
+   ]
+  },
+  {
+   "id": "x:222",
+   "qid": 222,
+   "question": "What is the difference between the number of molecules that are carcinogenic and those that are not?",
+   "evidence": "label = '+' means molecules are carcinogenic; label = '-' means molecules are non-carcinogenic; difference = SUBTRACT(SUM(label = '+'), SUM(label = '-'))",
+   "sql": "SELECT COUNT(CASE WHEN T.label = '+' THEN T.molecule_id ELSE NULL END) - COUNT(CASE WHEN T.label = '-' THEN T.molecule_id ELSE NULL END) AS diff_car_notcar FROM molecule t",
+   "refs": [
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:226",
+   "qid": 226,
+   "question": "What is the percentage of double bonds in the molecule TR008? Please provide your answer as a percentage with five decimal places.",
+   "evidence": "double bond refers to bond_type = '='; TR008 is the molecule id; percentage = DIVIDE(SUM(bond_type = '='), COUNT(bond_id)) as percent where molecule_id = 'TR008'",
+   "sql": "SELECT ROUND(CAST(COUNT(CASE WHEN T.bond_type = '=' THEN T.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(T.bond_id),5) FROM bond AS T WHERE T.molecule_id = 'TR008'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:255",
+   "qid": 255,
+   "question": "What proportion of single bonds are carcinogenic? Please provide your answer as a percentage with five decimal places.",
+   "evidence": "single bond refers to bond_type = '-'; label = '+' mean molecules are carcinogenic; proportion = DIVIDE(SUM(label = '+') * 100, COUNT(bond_id)) where bond_type = '-'",
+   "sql": "SELECT ROUND(CAST(COUNT(CASE WHEN T2.label = '+' THEN T1.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(T1.bond_id),5) FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '-'",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:286",
+   "qid": 286,
+   "question": "Among all chemical compounds identified in the database, what percent of compounds form a triple-bond.",
+   "evidence": "triple bond refers to bond_type = '#';",
+   "sql": "SELECT CAST(COUNT(CASE WHEN T.bond_type = '#' THEN T.bond_id ELSE NULL END) AS REAL) * 100 / COUNT(T.bond_id) FROM bond AS T",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type"
+   ]
+  },
+  {
+   "id": "x:225",
+   "qid": 225,
+   "question": "Please list top five molecules that have double bonds in alphabetical order.",
+   "evidence": "double bond refers to bond_type = ' = ';",
+   "sql": "SELECT DISTINCT T.molecule_id FROM bond AS T WHERE T.bond_type = '=' ORDER BY T.molecule_id LIMIT 5",
+   "refs": [
+    "c:bond.bond_type",
+    "c:bond.molecule_id"
+   ]
+  },
+  {
+   "id": "x:303",
+   "qid": 303,
+   "question": "How many double bonds does TR006 have and is it carcinogenic?",
+   "evidence": "label = '+' mean molecules are carcinogenic; label = '-' means molecules are non-carcinogenic; double bond refers to bond_type = ' = ';",
+   "sql": "SELECT COUNT(T1.bond_id), T2.label FROM bond AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.bond_type = '=' AND T2.molecule_id = 'TR006' GROUP BY T2.label",
+   "refs": [
+    "c:bond.bond_id",
+    "c:bond.bond_type",
+    "c:bond.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  },
+  {
+   "id": "x:208",
+   "qid": 208,
+   "question": "Which type of label is the most numerous in atoms with hydrogen?",
+   "evidence": "with hydrogen refers to element = 'h'; label most numerous in atoms refers to MAX(COUNT(label)); ",
+   "sql": "SELECT T.label FROM ( SELECT T2.label, COUNT(T2.molecule_id) FROM atom AS T1 INNER JOIN molecule AS T2 ON T1.molecule_id = T2.molecule_id WHERE T1.element = 'h' GROUP BY T2.label ORDER BY COUNT(T2.molecule_id) DESC LIMIT 1 ) t",
+   "refs": [
+    "c:atom.element",
+    "c:atom.molecule_id",
+    "c:molecule.label",
+    "c:molecule.molecule_id"
+   ]
+  }
+ ]
+}
