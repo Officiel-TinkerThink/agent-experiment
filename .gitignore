@@ -1,0 +1,15 @@
+# dependencies and third-party code
+node_modules/
+ext/
+
+# data: BIRD databases, downloads, derived graph, traces, and the sealed test split.
+# Regenerate with scripts/make_split.py (seed 20261116) after downloading BIRD dev.
+t2sql/data/
+
+# personal content (contains the user's pasted request with an email address)
+pasted_request.txt
+
+# logs and local env
+*.log
+.env
+.env.*

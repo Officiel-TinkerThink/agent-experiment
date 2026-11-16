@@ -1,0 +1,82 @@
+{
+  "question": "q2",
+  "wall_clock_ms": 83628,
+  "spawns": 17,
+  "models": [
+    "claude-haiku-5-5"
+  ],
+  "streamed_usage_by_origin": {
+    "main": {
+      "messages": 21,
+      "input_tokens": 72,
+      "output_tokens": 93,
+      "cache_read_input_tokens": 900375,
+      "cache_creation_input_tokens": 58046
+    },
+    "subagent": {
+      "messages": 92,
+      "input_tokens": 212,
+      "output_tokens": 619,
+      "cache_read_input_tokens": 900622,
+      "cache_creation_input_tokens": 135822
+    }
+  },
+  "sdk_result": {
+    "duration_ms": 5174,
+    "duration_api_ms": 322818,
+    "num_turns": 1,
+    "total_cost_usd": 0.07805242000000001,
+    "usage": {
+      "input_tokens": 4,
+      "cache_creation_input_tokens": 1380,
+      "cache_read_input_tokens": 65999,
+      "output_tokens": 1291,
+      "output_tokens_details": {
+        "thinking_tokens": 246
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 1380,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "global",
+      "iterations": [
+        {
+          "input_tokens": 4,
+          "output_tokens": 1291,
+          "cache_read_input_tokens": 65999,
+          "cache_creation_input_tokens": 1380,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1380
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard",
+      "fallback_credit": null
+    },
+    "modelUsage": {
+      "claude-haiku-5-5": {
+        "inputTokens": 1695,
+        "outputTokens": 62572,
+        "cacheReadInputTokens": 1800997,
+        "cacheCreationInputTokens": 193868,
+        "webSearchRequests": 0,
+        "costUSD": 0.07805242000000001,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 128000,
+        "thinkingTokens": 15525,
+        "cacheCreationEphemeral5mInputTokens": 135822,
+        "cacheCreationEphemeral1hInputTokens": 58046,
+        "canonicalModel": "claude-haiku-5-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    }
+  }
+}

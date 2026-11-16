@@ -1,0 +1,77 @@
+{
+  "database": "analyst/db/sales.sqlite (SQLite). Query it only through analyst/validate_sql.mjs.",
+  "currency_note": "Monetary columns are in the order's local currency. Convert to USD with orders.fx_rate_to_usd.",
+  "tables": {
+    "customers": {
+      "grain": "one row per customer",
+      "primary_key": "customer_id",
+      "columns": {
+        "customer_id": "integer, primary key",
+        "name": "text",
+        "segment": "text: Consumer | SMB | Enterprise",
+        "region": "text: AMER | EMEA | APAC (the customer's home region)",
+        "signup_date": "text, ISO date",
+        "is_test_account": "integer 0/1. 1 = internal test account; exclude from all business metrics"
+      }
+    },
+    "products": {
+      "grain": "one row per product",
+      "primary_key": "product_id",
+      "columns": {
+        "product_id": "integer, primary key",
+        "sku": "text",
+        "name": "text",
+        "category": "text: Hardware | Software | Services"
+      }
+    },
+    "orders": {
+      "grain": "one row per order",
+      "primary_key": "order_id",
+      "foreign_keys": { "customer_id": "customers.customer_id" },
+      "columns": {
+        "order_id": "integer, primary key",
+        "customer_id": "integer, foreign key",
+        "order_date": "text, ISO date the order was placed. Revenue timing uses this column.",
+        "status": "text: completed | cancelled | pending",
+        "currency": "text: USD | EUR | JPY (local order currency)",
+        "fx_rate_to_usd": "real, rate on the order date. Multiply local amounts by this to get USD."
+      }
+    },
+    "order_items": {
+      "grain": "one row per product line within an order",
+      "primary_key": "order_item_id",
+      "foreign_keys": { "order_id": "orders.order_id", "product_id": "products.product_id" },
+      "columns": {
+        "order_item_id": "integer, primary key",
+        "order_id": "integer, foreign key",
+        "product_id": "integer, foreign key",
+        "quantity": "integer",
+        "unit_price": "real, local currency, before discount",
+        "discount_pct": "real, 0 to 0.15, fraction (0.10 = 10%)"
+      }
+    },
+    "returns": {
+      "grain": "one row per returned quantity event on an order item",
+      "primary_key": "return_id",
+      "foreign_keys": { "order_item_id": "order_items.order_item_id" },
+      "columns": {
+        "return_id": "integer, primary key",
+        "order_item_id": "integer, foreign key",
+        "return_date": "text, ISO date the return happened. Refund timing uses this column.",
+        "quantity_returned": "integer",
+        "refund_amount": "real, local currency of the original order"
+      }
+    }
+  },
+  "joins": [
+    "orders.customer_id = customers.customer_id",
+    "order_items.order_id = orders.order_id",
+    "order_items.product_id = products.product_id",
+    "returns.order_item_id = order_items.order_item_id"
+  ],
+  "warnings": [
+    "returns is at order-item level. Reaching it from orders needs order_items; joining orders directly to returns is not possible without that bridge.",
+    "orders has many order_items, so summing order-level columns after a join to order_items will overcount.",
+    "order_date and return_date are different events and can fall in different fiscal years."
+  ]
+}

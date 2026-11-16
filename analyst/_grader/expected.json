@@ -1,0 +1,28 @@
+{
+  "q1": [
+    {
+      "region": "EMEA",
+      "net_revenue_usd": 126058.63
+    }
+  ],
+  "q2": [
+    {
+      "segment": "Consumer",
+      "q3_customers": 10,
+      "retained_customers": 5,
+      "retention_rate": 0.5
+    },
+    {
+      "segment": "Enterprise",
+      "q3_customers": 11,
+      "retained_customers": 6,
+      "retention_rate": 0.545
+    },
+    {
+      "segment": "SMB",
+      "q3_customers": 14,
+      "retained_customers": 7,
+      "retention_rate": 0.5
+    }
+  ]
+}
